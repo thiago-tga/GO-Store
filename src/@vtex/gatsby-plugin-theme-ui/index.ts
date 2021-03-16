@@ -21,6 +21,7 @@ import searchBarTheme from './searchBar'
 import { searchTheme } from './searchFilter'
 import searchSuggestionsTheme from './searchSuggestions'
 import sliderTheme from './slider'
+import footerTheme from './Footer'
 
 export default createTheme(
   searchBannerTheme,
@@ -29,6 +30,7 @@ export default createTheme(
   minicart,
   infoCardTheme,
   headerTheme,
+  footerTheme,
   productQuantityTheme,
   minicartTheme,
   searchControlsTheme,
