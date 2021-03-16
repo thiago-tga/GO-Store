@@ -31,7 +31,7 @@ const MAX_ITEMS = [1, 4]
 
 const RichTextRow: FC = () => (
   <FullWidthContainer>
-    <Box backgroundColor="#6b7381">
+    <Box backgroundColor="#FFFFFF">
       <Grid gap={2} columns={MAX_ITEMS}>
         <RowItemContainer>
           <BoxImg />
