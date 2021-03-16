@@ -4,14 +4,13 @@ const CardTheme: SxStyleProp = {
   card: {
     flexDirection: 'column',
     width: ['100%', '98%', '100%'],
+   
 
     
     image: {
       display: 'inline',
       height: '256px',
       maxWidth: '403px',
-     
-      
 
       link: {
         flex: 1,
@@ -38,8 +37,6 @@ const CardTheme: SxStyleProp = {
       paddingLeft: '1.5rem',
       paddingRight: '0.5rem',
 
-   
-     
       action: {
         display: 'flex',
         background:'#70BB44',

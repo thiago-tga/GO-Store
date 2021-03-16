@@ -8,6 +8,7 @@ const ContainerExplore: FC = () => (
       margin: 'auto',
       justifyContent: ['center', 'center', 'space-between'],
       gap: 2,
+      marginBottom: '3rem',
     }}
     css={() => ({
       [`@media (max-width: 647px)`]: {

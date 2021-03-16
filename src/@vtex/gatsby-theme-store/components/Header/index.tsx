@@ -6,8 +6,8 @@ import type { FC } from 'react'
 import React, { Fragment } from 'react'
 
 import Login from '../../../../components/Login'
-import Logo from './Logo'
 import Menu from './Menu'
+import Logo from './Logo'
 
 const StoreHeader: FC = () => {
   const variant = 'header'
@@ -16,7 +16,7 @@ const StoreHeader: FC = () => {
       <Header variant={variant}>
         <Flex variant={`${variant}.top`}>
           <Flex variant={`${variant}.left`}>
-            <Logo variant={`${variant}.logo`} />
+            <Logo />
           </Flex>
           <Flex
             css={() => ({

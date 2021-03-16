@@ -17,7 +17,7 @@ import { menuTheme } from './menu'
     menuTheme,
     {
       left: {
-       
+       m:'1rem',
         
       
       },

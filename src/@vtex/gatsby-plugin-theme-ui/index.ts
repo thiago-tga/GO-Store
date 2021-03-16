@@ -30,7 +30,7 @@ export default createTheme(
   minicart,
   infoCardTheme,
   headerTheme,
-  // footerTheme,
+  footerTheme,
   productQuantityTheme,
   minicartTheme,
   searchControlsTheme,
