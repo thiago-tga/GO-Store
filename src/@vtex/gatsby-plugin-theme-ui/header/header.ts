@@ -18,6 +18,7 @@ import { menuTheme } from './menu'
     {
       left: {
        m:'1rem',
+       width: '71px',
         
       
       },

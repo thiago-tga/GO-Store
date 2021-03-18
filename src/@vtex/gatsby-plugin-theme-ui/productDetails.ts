@@ -2,19 +2,19 @@ import { SxStyleProp } from '@vtex/store-ui'
 
 const productDetails: SxStyleProp = {
   reference: {
-    fontSize: '16px',
-    fontWeight: 400,
-    color: '#727273',
+    // fontSize: '16px',
+    // fontWeight: 400,
+    // color: '#727273',
   },
 
   title: {
-    color: '#3f3f40',
-    fontSize: '30px',
-    fontWeight: 700,
+    // color: '#3f3f40',
+    // fontSize: '30px',
+    // fontWeight: 700,
   },
 
   container: {
-    px: [0, 5, 6],
+    // px: [0, 5, 6],
   },
 }
 

@@ -29,7 +29,7 @@ const custom: SxStyleProp = {
         quantity: {
           width: 100,
           border: '2px solid red',
-
+bg: 'red',
           wrapper: {
             marginTop: 3,
             alignItems: 'center',

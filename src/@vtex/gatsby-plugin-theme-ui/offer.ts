@@ -6,6 +6,7 @@ export default {
         fontSize: '16px',
         color: '#727273',
         minHeight: '25px',
+      
       },
 
       price: {
@@ -19,16 +20,16 @@ export default {
       discountBadge: {
         fontSize: '14px',
         fontWeight: 600,
-        borderRadius: '1000px',
-        px: '4px',
         backgroundColor: '#417a00',
         color: 'white',
-        marginLeft: '8px',
-        py: 'auto',
+        position: 'absolute',
+        top: '30px',
+        left: '30px',
       },
 
       container: {
         minHeight: '130px',
+      
       },
 
       installments: {

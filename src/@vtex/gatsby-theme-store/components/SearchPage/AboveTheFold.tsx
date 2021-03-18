@@ -21,7 +21,7 @@ const DesktopSearchFilters = lazy(
   () => import('@vtex/gatsby-theme-store/src/components/Search/Filters/Desktop')
 )
 
-const COLUMNS = [2, 3, 5]
+const COLUMNS = [1, 2, 3, 4]
 
 type Props = PageProps<
   SearchPageQueryQuery,

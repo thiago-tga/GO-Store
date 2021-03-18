@@ -2,7 +2,6 @@ import Container from '@vtex/gatsby-theme-store/src/components/Container'
 import type { PageProps } from 'gatsby'
 import { FC } from 'react'
 import React from 'react'
-
 import type { HomePageQueryQuery } from '../../pages/__generated__/HomePageQuery.graphql'
 import RichTextRow from './RichTextRow'
 import ContainerExplore from './Explore/ContainerExplore'

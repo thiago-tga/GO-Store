@@ -1,6 +1,5 @@
 import {
   Box,
-  Flex,
   InfoCard,
   InfoCardImage,
   InfoCardInfo,
@@ -10,7 +9,7 @@ import {
 import { jsx } from 'theme-ui'
 
 import React, { FC } from 'react'
-const Block: FC = ({ children }) => <Box sx={{}}>{children}</Box>
+const Block: FC = ({ children }) => <Box>{children}</Box>
 interface Props {
   href: string
   src: string

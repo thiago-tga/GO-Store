@@ -1,4 +1,3 @@
-import { Carousel, LocalizedLink } from '@vtex/store-ui'
 import Container from '@vtex/gatsby-theme-store/src/components/Container'
 import type { PageProps } from 'gatsby'
 import { FC } from 'react'
@@ -6,19 +5,18 @@ import React from 'react'
 
 import type { HomePageQueryQuery } from '../../pages/__generated__/HomePageQuery.graphql'
 import ShelfProducts from '../Shelf/ShelfProducts'
-
+import Banner from './Banner/HomeBanner'
 type Props = PageProps<HomePageQueryQuery>
 
-const Fold: FC<Props> = ({ data: { content, vtex } }) => (
+const Fold: FC<Props> = ({ data: { content, vtex } }, props) => (
   <>
-    <Carousel
-      {...content?.blocks[0]?.props}
-      height="200px"
-      width="360px"
-      link={LocalizedLink}
-    />
-    <Container sx={{ width: ['100%', '99%', '54rem'] }}>
-      <ShelfProducts {...content?.blocks[1]?.props} products={vtex.products} />
+    <Banner {...props} />
+    <Container>
+      <ShelfProducts
+        {...content?.blocks[1]?.props}
+        products={vtex.products}
+        pageSizes={3}
+      />
     </Container>
   </>
 )

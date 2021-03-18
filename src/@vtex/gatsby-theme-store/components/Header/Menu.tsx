@@ -53,22 +53,22 @@ const CustomMenu: FC<{ variant?: string }> = ({ variant }) => {
           },
         })}
       >
-        <LocalizedLink to="/ Vestidos " activeClassName="active">
-          VESTIDO
+        <LocalizedLink to="/Vestidos " activeClassName="active">
+          VESTIDOS
         </LocalizedLink>
-        <LocalizedLink to="Fitness" activeClassName="active">
+        <LocalizedLink to="/Fitness" activeClassName="active">
           FITNESS
         </LocalizedLink>
-        <LocalizedLink to="/Camisetas" activeClassName="active">
+        <LocalizedLink to="/Tops" activeClassName="active">
           CAMISETAS
         </LocalizedLink>
-        <LocalizedLink to="/Calças" activeClassName="active">
+        <LocalizedLink to="/Bottoms" activeClassName="active">
           CALÇAS
         </LocalizedLink>
-        <LocalizedLink to="/Acessórios" activeClassName="active">
+        <LocalizedLink to="/Accessories" activeClassName="active">
           ACESSÓRIOS
         </LocalizedLink>
-        <LocalizedLink to="Calçados" activeClassName="active">
+        <LocalizedLink to="/Shoes" activeClassName="active">
           CALÇADOS
         </LocalizedLink>
       </Flex>

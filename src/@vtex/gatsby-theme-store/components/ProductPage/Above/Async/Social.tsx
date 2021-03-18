@@ -22,7 +22,7 @@ const Social: FC = () => {
 
   return (
     <Fragment>
-      <div sx={{ color: '#707070', fontSize: '14px' }}>
+      <div sx={{ color: 'blue', fontSize: '14px' }}>
         {formatMessage({ id: 'social.share' })}
       </div>
       <div sx={{ display: 'flex' }}>

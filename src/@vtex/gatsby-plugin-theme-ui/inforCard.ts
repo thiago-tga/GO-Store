@@ -4,9 +4,7 @@ const CardTheme: SxStyleProp = {
   card: {
     flexDirection: 'column',
     width: ['100%', '98%', '100%'],
-   
-
-    
+  
     image: {
       display: 'inline',
       height: '256px',

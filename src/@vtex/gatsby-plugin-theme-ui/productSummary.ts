@@ -7,7 +7,6 @@ const productSummary: SxStyleProp = {
     textDecoration: 'none',
     color: 'text',
     flexGrow: 1,
-
     justifySelf: 'center',
     width: '100%',
   },
@@ -15,12 +14,13 @@ const productSummary: SxStyleProp = {
   title: {
     fontWeight: 400,
     fontSize: '14px',
-    height: '75px',
+    height: '20px',
     color: '#071923',
     marginTop: '1rem',
   },
 
   image: {
+    padding: '30px',
     width: '100%',
   },
 }

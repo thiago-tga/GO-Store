@@ -8,6 +8,7 @@ import {
   Grid,
   Breadcrumb,
   ProductDetailsTitle,
+  Box,
 } from '@vtex/store-ui'
 import React, { FC, Suspense } from 'react'
 import { isServer } from '@vtex/gatsby-theme-store/src/utils/env'
@@ -50,14 +51,21 @@ const AboveTheFold: FC<Props> = ({
   const imageItems = useDetailsImages(images)
   const videoItems = useDetailsVideos(videos, productName)
   const galleryItems = [...imageItems, ...videoItems]
-
+  ///roupas itens aqui
   return (
     <Flex variant="productPage.container">
       <Container>
         <Breadcrumb breadcrumb={breadcrumb} type="PRODUCT" />
-        <Grid my={4} mx="auto" gap={[0, 3]} columns={[1, '60% 40%']}>
-          <ProductImageGallery allItems={galleryItems} />
-
+        <Grid
+          my={4}
+          mx="auto"
+          gap={[0, 3]}
+          columns={[1, '60% 40%']}
+          backgroundColor="red"
+        >
+          <Box sx={{ bg: 'pink' }}>
+            <ProductImageGallery allItems={galleryItems} />
+          </Box>
           <Card>
             <ProductDetailsTitle variant={variant}>
               {productName}
