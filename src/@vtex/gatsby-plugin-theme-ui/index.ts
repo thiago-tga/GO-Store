@@ -21,7 +21,7 @@ import { searchTheme } from './searchFilter'
 import searchSuggestionsTheme from './searchSuggestions'
 import headerTheme from './header/header'
 import sliderTheme from './slider'
-
+import footerTheme from './footer'
 export default createTheme(
   searchBannerTheme,
   base,
@@ -41,5 +41,6 @@ export default createTheme(
   productSummaryTheme,
   productDetailsTheme,
   loginTheme,
-  authTheme
+  authTheme,
+  footerTheme,
 )

@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.22.0",
   "dependencies": {
+    "@fontsource/open-sans": "^4.2.2",
     "@vtex/gatsby-plugin-cms": "^0.275.0",
     "@vtex/gatsby-plugin-google-tag-manager": "0.276.0",
     "@vtex/gatsby-plugin-graphql": "^0.275.0",
