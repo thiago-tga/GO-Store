@@ -31,7 +31,7 @@ const NavFooter: FC<{ variant?: string }> = ({ variant }) => (
           lineHeight: '24px',
           fontStyle: 'normal',
           fontWeight: 'normal',
-          //hehehe
+          //hehehefff
         }}
       >
         Informações

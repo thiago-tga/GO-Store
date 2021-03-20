@@ -18,9 +18,9 @@ const productSummary: SxStyleProp = {
   },
 
   image: {
-    minWidth: '230px',
-    width:'100%',
-    padding: '30px',
+   width:'100%',
+   padding: ['15px', '20px', '30px'],
+   position: 'relative',
   },
 }
 

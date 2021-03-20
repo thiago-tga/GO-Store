@@ -70,6 +70,15 @@ const ProductSummary: FC<Props> = ({
         width: '33%',
         position: 'relative',
       }}
+      css={() => ({
+        [`@media (min-width: 767px)`]: {
+          width: '32.9%',
+        },
+
+        [`@media (max-width: 766px)`]: {
+          width: '49.3%',
+        },
+      })}
     >
       <ProductSummaryContainer {...linkProps} variant={variant}>
         <ProductSummaryImage
@@ -78,7 +87,7 @@ const ProductSummary: FC<Props> = ({
           variant={variant}
           {...imgProps}
         />
-        <Box sx={{ paddingLeft: 30 }}>
+        <Box sx={{ paddingLeft: '10%' }}>
           <ProductSummaryTitle variant={variant}>
             {productName}
           </ProductSummaryTitle>

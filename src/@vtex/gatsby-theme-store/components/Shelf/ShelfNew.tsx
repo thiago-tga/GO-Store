@@ -34,12 +34,10 @@ const Shelf1: FC<Props> = ({
       variant={`shelf.${variant}.page.container`}
       sx={{
         flexDirection: 'column',
-        // width: '909px',
-        width: '80%',
+        width: ['100%', '90%', '85%'],
         margin: 'auto',
-        paddingLeft: 1,
+        padding: 0,
         paddingTop: '3rem',
-        bg: 'red',
       }}
     >
       {title && <ShelfTitle variant={variant}>{title}</ShelfTitle>}
@@ -49,9 +47,9 @@ const Shelf1: FC<Props> = ({
         items={items}
         sx={{
           flexWrap: 'wrap',
-          columns: '3',
-          justifyContent: 'space-between',
+          justifyContent: ['center', 'space-between', 'space-between'],
           gap: 1,
+          width: '100%',
         }}
       />
     </Flex>
