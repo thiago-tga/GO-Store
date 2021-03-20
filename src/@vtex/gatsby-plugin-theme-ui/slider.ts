@@ -197,8 +197,11 @@ const theme: SxStyleProp = {
       },
 
       title: {
-         fontSize: '32px',
-         background: 'red'
+         fontSize: '24px',
+         color: '#3F3F40',
+         fontWeight: 400,
+         letterSpacing: '0.2em',
+         textTransform: 'uppercase',
       },
 
       // paginationDots: shelfPaginationDots,

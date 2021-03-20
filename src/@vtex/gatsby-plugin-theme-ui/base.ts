@@ -26,16 +26,15 @@ const customBase = {
     secondary: '#f71963',
     muted: '#f0f0f0',
     gray: '#e3e4e6',
-    fontFamily: 'Rubik, sans-serif',
   },
   sizes: {
     container: '96rem',
-    background: 'red',
+    
   },
+  
   layout: {
-    background: 'red',
     container: {
-      px: [1, 2, 3],
+      bg: '#E5E5E5',
     },
   },
 }

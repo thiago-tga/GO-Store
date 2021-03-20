@@ -10,11 +10,11 @@ import ShelfProducts from '../Shelf/ShelfFarm'
 type Props = PageProps<HomePageQueryQuery>
 const pageSizes = [6]
 const BelowTheFold: FC<Props> = ({ data: { content, vtex } }, props) => (
-  <Box>
-    <Box sx={{ width: ['100%', '99%', '901px'], margin: 'auto' }}>
-      <ContainerExplore {...props} />
-    </Box>
+  <>
     <Container>
+      <Box sx={{ width: ['100%', '99%', '901px'], margin: 'auto' }}>
+        <ContainerExplore {...props} />
+      </Box>
       <ShelfProducts
         {...content?.blocks[1]?.props}
         products={vtex.products}
@@ -23,7 +23,7 @@ const BelowTheFold: FC<Props> = ({ data: { content, vtex } }, props) => (
       />
     </Container>
     <RichTextRow />
-  </Box>
+  </>
 )
 
 export default BelowTheFold

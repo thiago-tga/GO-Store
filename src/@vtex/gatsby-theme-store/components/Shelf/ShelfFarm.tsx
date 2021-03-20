@@ -1,8 +1,9 @@
-import { Flex, ShelfTitle, useResponsiveSlider } from '@vtex/store-ui'
+import { Box, Flex, ShelfTitle, useResponsiveSlider } from '@vtex/store-ui'
 import React from 'react'
 import type { FC } from 'react'
 
 import ShelfPage from './Page'
+import Traco from './Traco'
 import type { ProductSummary_ProductFragment } from '@vtex/gatsby-theme-store/src/components/ProductSummary/__generated__/ProductSummary_product.graphql'
 
 type Product = Maybe<ProductSummary_ProductFragment>
@@ -36,9 +37,11 @@ const Shelf: FC<Props> = ({
         width: '909px',
         margin: 'auto',
         paddingLeft: 1,
+        paddingBottom: '3rem',
       }}
     >
       {title && <ShelfTitle variant={variant}>{title}</ShelfTitle>}
+      <Traco />
       <ShelfPage
         variant={variant}
         items={items}

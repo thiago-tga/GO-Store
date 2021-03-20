@@ -36,6 +36,7 @@ bg: 'red',
 
             spinner: {
               marginLeft: 2,
+              
             },
           },
         },

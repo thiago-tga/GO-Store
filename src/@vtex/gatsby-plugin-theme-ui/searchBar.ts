@@ -54,6 +54,7 @@ const theme: SxStyleProp = createTheme(searchBarTheme, {
 
       '&:disabled': {
         color: '#F2F4F5',
+        
       },
     },
   },

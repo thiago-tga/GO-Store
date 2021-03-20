@@ -3,6 +3,7 @@ import React from 'react'
 import type { FC } from 'react'
 
 import ShelfPage from './Page'
+import Traco from './Traco'
 import type { ProductSummary_ProductFragment } from '@vtex/gatsby-theme-store/src/components/ProductSummary/__generated__/ProductSummary_product.graphql'
 
 type Product = Maybe<ProductSummary_ProductFragment>
@@ -36,9 +37,12 @@ const Shelf1: FC<Props> = ({
         width: '909px',
         margin: 'auto',
         paddingLeft: 1,
+        paddingTop: '3rem',
+        gap: 2,
       }}
     >
       {title && <ShelfTitle variant={variant}>{title}</ShelfTitle>}
+      <Traco />
       <ShelfPage
         variant={variant}
         items={items}

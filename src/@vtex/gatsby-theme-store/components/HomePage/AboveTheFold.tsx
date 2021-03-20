@@ -10,7 +10,7 @@ type Props = PageProps<HomePageQueryQuery>
 const pageSizes = [6]
 
 const Fold: FC<Props> = ({ data: { content, vtex } }, props) => (
-  <Box>
+  <>
     <Banner {...props} />
     <Container>
       <ShelfProducts
@@ -20,6 +20,6 @@ const Fold: FC<Props> = ({ data: { content, vtex } }, props) => (
         title={'NOVIDADES'}
       />
     </Container>
-  </Box>
+  </>
 )
 export default Fold
