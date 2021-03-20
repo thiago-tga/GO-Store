@@ -1,6 +1,5 @@
 import {
   createTheme,
-  headerTheme,
   infoCardTheme,
   minicartTheme,
   searchControlsTheme,
@@ -20,6 +19,7 @@ import { searchBannerTheme } from './searchBanner'
 import searchBarTheme from './searchBar'
 import { searchTheme } from './searchFilter'
 import searchSuggestionsTheme from './searchSuggestions'
+import headerTheme from './header/header'
 import sliderTheme from './slider'
 
 export default createTheme(
