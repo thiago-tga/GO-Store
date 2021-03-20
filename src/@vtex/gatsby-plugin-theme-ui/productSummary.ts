@@ -1,16 +1,12 @@
 import { SxStyleProp } from '@vtex/store-ui'
 
 const productSummary: SxStyleProp = {
-  container: {
-   // maxWidth: '300px',
-   // minWidth: '150px',w
-  
+  container: {  
     textDecoration: 'none',
   //  color: 'text',
    // flexGrow: 1,
    // justifySelf: 'center',
   
-    
   },
 
   title: {

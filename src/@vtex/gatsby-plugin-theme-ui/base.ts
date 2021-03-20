@@ -34,7 +34,7 @@ const customBase = {
   
   layout: {
     container: {
-      bg: '#E5E5E5',
+      bg: '#F7F9FA',
     },
   },
 }

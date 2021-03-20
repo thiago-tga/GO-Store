@@ -34,7 +34,8 @@ const Shelf: FC<Props> = ({
       variant={variant}
       sx={{
         flexDirection: 'column',
-        width: '909px',
+        // width: '909px',
+        width: '80%',
         margin: 'auto',
         paddingLeft: 1,
         paddingBottom: '3rem',
@@ -48,7 +49,7 @@ const Shelf: FC<Props> = ({
         sx={{
           flexWrap: 'wrap',
           columns: '3',
-          gap: 0.9,
+          gap: 1,
         }}
       />
     </Flex>

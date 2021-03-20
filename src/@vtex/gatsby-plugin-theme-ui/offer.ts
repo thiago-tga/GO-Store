@@ -20,11 +20,12 @@ export default {
       discountBadge: {
         fontSize: '14px',
         fontWeight: 600,
-        backgroundColor: '#417a00',
+        backgroundColor: '#71985A',
         color: 'white',
         position: 'absolute',
         top: '30px',
         left: '30px',
+        padding: '0.5rem',
       },
 
       container: {

@@ -63,7 +63,14 @@ const ProductSummary: FC<Props> = ({
   const imgProps = useSummaryImage(imageUrl)
 
   return (
-    <Box sx={{ bg: '#FFFFFF', width: '300px', position: 'relative' }}>
+    <Box
+      sx={{
+        bg: '#FFFFFF',
+        minWidth: '160px',
+        width: '33%',
+        position: 'relative',
+      }}
+    >
       <ProductSummaryContainer {...linkProps} variant={variant}>
         <ProductSummaryImage
           alt={imageText ?? 'Product Image'}

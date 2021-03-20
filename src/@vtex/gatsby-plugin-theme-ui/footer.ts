@@ -1,11 +1,11 @@
 export default {
     footer: {
       FooterBox: {
-        height: '609px',
-        left: '0px',
-        right: '0px',
-        bottom: '0px',
-        bg: 'orange',
+        // height: '609px',
+        // left: '0px',
+        // right: '0px',
+        // bottom: '0px',
+        // bg: 'orange',
       },
       NavFooter: {
         flexDirection: 'column',
@@ -13,6 +13,7 @@ export default {
       },
       SocialMedias: {
         bg: 'blue',
+    
       },
     },
   }

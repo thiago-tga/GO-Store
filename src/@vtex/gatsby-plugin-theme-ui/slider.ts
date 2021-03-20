@@ -189,11 +189,7 @@ const theme: SxStyleProp = {
   shelf: {
     default: {
       container: {
-       background: 'black'
-        // width: '100%',
-        // height: '585px',
-        // marginTop: '20px',
-        // marginBottom: '120px',
+       
       },
 
       title: {

@@ -82,6 +82,7 @@ const SocialMedias: FC<{ variant?: string }> = ({ variant }) => (
           width: '48px',
           alignItems: 'center',
           justifyContent: 'center',
+          //hehehe perdeu o footer
         }}
       >
         <Image
