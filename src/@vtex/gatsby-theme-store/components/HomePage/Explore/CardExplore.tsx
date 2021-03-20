@@ -9,7 +9,9 @@ import {
 import { jsx } from 'theme-ui'
 
 import React, { FC } from 'react'
-const Block: FC = ({ children }) => <Box>{children}</Box>
+const Block: FC = ({ children }) => (
+  <Box sx={{ width: ['100%', '50%', '50%'] }}>{children}</Box>
+)
 interface Props {
   href: string
   src: string
@@ -17,7 +19,7 @@ interface Props {
 }
 const CardExplore: FC<Props> = ({ href, src, title }) => (
   <>
-    <Block sx={{ width: ['100%', '50%', '25%'] }}>
+    <Block>
       <InfoCard>
         <InfoCardImage href={href} src={src} alt="infocard-banner" />
       </InfoCard>

@@ -12,7 +12,7 @@ const pageSizes = [6]
 const BelowTheFold: FC<Props> = ({ data: { content, vtex } }, props) => (
   <>
     <Container>
-      <Box sx={{ width: ['100%', '99%', '901px'], margin: 'auto' }}>
+      <Box sx={{ width: ['100%', '90%', '85%'], margin: 'auto' }}>
         <ContainerExplore {...props} />
       </Box>
       <ShelfProducts

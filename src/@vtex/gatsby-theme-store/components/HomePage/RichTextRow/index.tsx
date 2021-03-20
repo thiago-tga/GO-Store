@@ -35,7 +35,7 @@ const RichTextRow: FC = () => (
           textAlign: 'center',
         }}
       >
-        MARCAS
+        Marcas
       </Box>
       <Grid gap={2} columns={MAX_ITEMS}>
         <RowItemContainer>

@@ -3,19 +3,17 @@ import type { SxStyleProp } from '@vtex/store-ui'
 const CardTheme: SxStyleProp = {
   card: {
     flexDirection: 'column',
-    width: ['100%', '98%', '100%'],
   
     image: {
       display: 'inline',
       height: '256px',
-      maxWidth: '403px',
-
+     
       link: {
         flex: 1,
         
       },
       content: {
-        width: '100%',
+       width: '100%',
         objectPosition: 'center',
         objectFit: 'cover',
        
@@ -25,7 +23,6 @@ const CardTheme: SxStyleProp = {
     info: {
       flexDirection: 'column',
       height: '152px',
-      width: ['100%', '98%', '100%'],
       background:'#F2F4F5',
       color: '#3F3F40',
       fontWeight: 400,
@@ -40,7 +37,7 @@ const CardTheme: SxStyleProp = {
         background:'#70BB44',
         width: '148px',
         height: '40px',
-       alignItems: 'center',
+         alignItems: 'center',
         justifyContent: 'space-around',
         fontSize: '12px',
         fontWeight: 500, 

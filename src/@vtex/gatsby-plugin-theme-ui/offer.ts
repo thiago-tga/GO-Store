@@ -10,7 +10,7 @@ export default {
       },
 
       price: {
-        fontSize: '20px',
+        fontSize: '1.2rem',
         fontWeight: 600,
         color: '#062e2e',
         height: '25px',
@@ -18,7 +18,7 @@ export default {
       },
 
       discountBadge: {
-        fontSize: '14px',
+        fontSize: '1rem',
         fontWeight: 600,
         backgroundColor: '#71985A',
         color: 'white',
