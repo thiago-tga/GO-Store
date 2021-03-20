@@ -66,20 +66,12 @@ const Offer: FC<Props> = ({
           <Box
             sx={{
               display: 'flex',
-              marginTop: '16px',
+              marginTop: '8px',
               marginBottom: '4px',
               justifyContent: 'flex-start',
             }}
           >
             <OfferListPrice variant={variant}>{listPrice}</OfferListPrice>
-            <OfferDiscountBadge variant={variant}>
-              {discountPrice !== 0
-                ? formatMessage(
-                    { id: 'offer.discount' },
-                    { price: format(discountPrice) }
-                  )
-                : discountPrice}
-            </OfferDiscountBadge>
           </Box>
 
           <OfferPrice variant={variant}>{price}</OfferPrice>

@@ -45,6 +45,7 @@ const paginationDots: SxStyleProp = {
 const shelfPaginationDots: SxStyleProp = createTheme(paginationDots, {
   container: {
     position: 'relative',
+    background: 'blue',
   },
 })
 
@@ -140,13 +141,15 @@ const theme: SxStyleProp = {
     mx: 2,
     display: 'flex',
     flexWrap: 'nowrap',
-    flexDirection: 'row',
+    flexDirection: 'column-reverse',
 
     miniature: {
       container: {
         mx: '15px',
         width: '78px',
-        display: ['none', 'block'],
+       flexDirection: 'row',
+      
+        
       },
 
       active: {
@@ -185,25 +188,20 @@ const theme: SxStyleProp = {
 
   shelf: {
     default: {
-      arrow: shelfArrows,
-
       container: {
-        width: '100%',
-        height: '585px',
-        marginTop: '20px',
-        marginBottom: '120px',
+       background: 'black'
+        // width: '100%',
+        // height: '585px',
+        // marginTop: '20px',
+        // marginBottom: '120px',
       },
 
       title: {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: '32px',
-        fontWeight: 200,
-        my: '20px',
+         fontSize: '32px',
+         background: 'red'
       },
 
-      paginationDots: shelfPaginationDots,
+      // paginationDots: shelfPaginationDots,
     },
   },
 }

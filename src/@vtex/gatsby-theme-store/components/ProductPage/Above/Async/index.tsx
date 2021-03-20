@@ -2,13 +2,14 @@ import React, { FC } from 'react'
 import { useAsyncProduct } from '@vtex/gatsby-theme-store/src/components/ProductPage/useAsyncProduct'
 import { useBestSeller } from '@vtex/gatsby-theme-store/src/sdk/product/useBestSeller'
 import { useSku } from '@vtex/gatsby-theme-store/src/sdk/product/useSku'
-import { Divider, ProductDetailsReference } from '@vtex/store-ui'
+import { Flex, ProductDetailsReference, Button } from '@vtex/store-ui'
 import { useIntl } from '@vtex/gatsby-plugin-i18n'
 
 import BuyButton from '../../../BuyButton'
 import Offer from './Offer'
-import Social from './Social'
-
+import Color from './Color'
+import Size from './Size'
+import Amount from './Amount'
 type Item = {
   itemId: string
   sellers: Array<{
@@ -47,14 +48,21 @@ const Async: FC<Props> = ({ slug }) => {
   return (
     <>
       <Offer variant="productDetails" commercialOffer={commercialOffer} />
-
-      <Divider />
-
+      <Color />
+      <Size />
       <ProductDetailsReference variant={variant}>
         {formatMessage({ id: 'productDetails.reference' })}: {productReference}
       </ProductDetailsReference>
-      <BuyButton sku={sku} />
-      <Social />
+      <Flex
+        sx={{
+          justifyContent: 'space-between',
+          flexWrap: 'wrap',
+        }}
+      >
+        <Button>COMPRAR AGORA</Button>
+        <BuyButton sku={sku} />
+      </Flex>
+      <Amount />
     </>
   )
 }

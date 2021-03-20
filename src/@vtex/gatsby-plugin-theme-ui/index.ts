@@ -1,6 +1,5 @@
 import {
   createTheme,
-  infoCardTheme,
   minicartTheme,
   searchControlsTheme,
   loginTheme,
@@ -19,9 +18,11 @@ import { searchBannerTheme } from './searchBanner'
 import searchBarTheme from './searchBar'
 import { searchTheme } from './searchFilter'
 import searchSuggestionsTheme from './searchSuggestions'
-import headerTheme from './header/header'
 import sliderTheme from './slider'
+import headerTheme from './header/header'
+import infoCardTheme from './inforCard'
 import footerTheme from './footer'
+
 export default createTheme(
   searchBannerTheme,
   base,
@@ -29,6 +30,7 @@ export default createTheme(
   minicart,
   infoCardTheme,
   headerTheme,
+  footerTheme,
   productQuantityTheme,
   minicartTheme,
   searchControlsTheme,
@@ -41,6 +43,5 @@ export default createTheme(
   productSummaryTheme,
   productDetailsTheme,
   loginTheme,
-  authTheme,
-  footerTheme,
+  authTheme
 )

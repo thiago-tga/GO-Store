@@ -6,6 +6,7 @@ export default {
         fontSize: '16px',
         color: '#727273',
         minHeight: '25px',
+      
       },
 
       price: {
@@ -19,16 +20,16 @@ export default {
       discountBadge: {
         fontSize: '14px',
         fontWeight: 600,
-        borderRadius: '1000px',
-        px: '4px',
         backgroundColor: '#417a00',
         color: 'white',
-        marginLeft: '8px',
-        py: 'auto',
+        position: 'absolute',
+        top: '30px',
+        left: '30px',
       },
 
       container: {
         minHeight: '130px',
+      
       },
 
       installments: {
@@ -42,27 +43,33 @@ export default {
       listPrice: {
         textDecoration: 'line-through',
         fontSize: '16px',
-        color: '#727273',
+        color: '#979899',
         minHeight: '25px',
       },
 
       discountBadge: {
         fontSize: '16px',
         color: '#417a00',
+      
       },
 
       price: {
         fontSize: '36px',
-        fontWeight: 700,
-        color: '#3f3f06',
-        height: '41px',
+        fontWeight: 'normal',
+        color: '3F3F40',
+        height: '36px',
         marginBottom: '12px',
+        fontStyle: 'normal',
+        lineHeight: '36px',
+        
+
       },
 
       installments: {
         fontSize: '16px',
         fontWeight: 400,
         color: '#727273',
+        fontFamily: 'Rubik, sans-serif',
       },
     },
   },

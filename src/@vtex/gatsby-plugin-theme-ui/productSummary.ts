@@ -2,26 +2,29 @@ import { SxStyleProp } from '@vtex/store-ui'
 
 const productSummary: SxStyleProp = {
   container: {
-    maxWidth: '300px',
-    minWidth: '150px',
+   // maxWidth: '300px',
+   // minWidth: '150px',w
+  
     textDecoration: 'none',
-    color: 'text',
-    flexGrow: 1,
-
-    justifySelf: 'center',
-    width: '100%',
+  //  color: 'text',
+   // flexGrow: 1,
+   // justifySelf: 'center',
+  
+    
   },
 
   title: {
     fontWeight: 400,
     fontSize: '14px',
-    height: '75px',
+    height: '20px',
     color: '#071923',
-    marginTop: '1rem',
+
   },
 
   image: {
-    width: '100%',
+    minWidth: '230px',
+    width:'100%',
+    padding: '30px',
   },
 }
 

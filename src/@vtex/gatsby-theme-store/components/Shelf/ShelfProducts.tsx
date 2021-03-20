@@ -1,15 +1,12 @@
-import Shelf from '@vtex/gatsby-theme-store/src/components/Shelf'
-import { ShelfContainer } from '@vtex/store-ui'
+import Shelf from './ShelfFarm'
 import React, { ComponentPropsWithoutRef, FC } from 'react'
-
+import { Flex, ShelfTitle, useResponsiveSlider } from '@vtex/store-ui'
 type Props = ComponentPropsWithoutRef<typeof Shelf>
 
-const pageSizes = [1, 3, 4]
-
+const pageSizes = [6]
+//modificacoes da coluna aqui
 const ShelfProducts: FC<Props> = (props) => (
-  <ShelfContainer>
-    <Shelf {...props} pageSizes={pageSizes} />
-  </ShelfContainer>
+  <Shelf {...props} pageSizes={pageSizes} title={'FARM'} />
 )
 
 export default ShelfProducts
