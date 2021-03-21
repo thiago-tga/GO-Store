@@ -8,10 +8,6 @@ export default {
       height: '609px',
       width: '100%',
       padding: '20px',
-      // //   left: '0px',
-      // //   top: '4084px',
-      // //   borderRadius: '0px',
-      //   bg: 'orange',
     },
     NavFooter: {
       fontFamily: 'Rubik',
