@@ -12,7 +12,8 @@ const SocialMedias: FC<{ variant?: string }> = ({ variant }) => (
         preço ofertado.
       </Text>
     </Flex>
-    <Flex>
+
+    <Flex sx={{ marginLeft: '200px' }}>
       <Link
         href="https://www.facebook.com/vtexonline/"
         target="_blank"
@@ -82,6 +83,7 @@ const SocialMedias: FC<{ variant?: string }> = ({ variant }) => (
           width: '48px',
           alignItems: 'center',
           justifyContent: 'center',
+          // hehehe perdeu o footer
         }}
       >
         <Image
