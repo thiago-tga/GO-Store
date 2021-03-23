@@ -39,6 +39,11 @@ const Shelf: FC<Props> = ({
         padding: 0,
         paddingTop: '3rem',
       }}
+      css={() => ({
+        [`@media (max-width: 766px)`]: {
+          alignItems: 'center',
+        },
+      })}
     >
       {title && <ShelfTitle variant={variant}>{title}</ShelfTitle>}
       <Traco />

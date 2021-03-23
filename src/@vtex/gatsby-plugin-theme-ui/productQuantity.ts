@@ -26,6 +26,7 @@ export const productQuantityTheme: SxStyleProp = createTheme(
           '&:disabled': {
             color: '#101010',
             backgroundColor: '#efefef',
+         
             cursor: 'default',
           },
           plus: {

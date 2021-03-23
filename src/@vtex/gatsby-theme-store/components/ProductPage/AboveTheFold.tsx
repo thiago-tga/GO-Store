@@ -11,7 +11,7 @@ import {
 } from '@vtex/store-ui'
 import React, { FC, Suspense } from 'react'
 import { isServer } from '@vtex/gatsby-theme-store/src/utils/env'
-
+import { useOrderForm } from '@vtex/gatsby-theme-store/src/sdk/orderForm/useOrderForm'
 import AsyncInfoContainer from './Above/Async/Container'
 import AsyncInfoPreview from './Above/Async/Preview'
 import AsyncInfo from './Above/Async'
@@ -51,6 +51,9 @@ const AboveTheFold: FC<Props> = ({
   const videoItems = useDetailsVideos(videos, productName)
   const galleryItems = [...imageItems, ...videoItems]
 
+  const orderForm = useOrderForm()
+  const customVariant = `${variant}.drawer`
+
   return (
     <Flex variant="productPage.container">
       <Container>
@@ -66,7 +69,11 @@ const AboveTheFold: FC<Props> = ({
             <AsyncInfoContainer>
               {isServer ? null : (
                 <Suspense fallback={<AsyncInfoPreview />}>
-                  <AsyncInfo slug={slug} />
+                  <AsyncInfo
+                    slug={slug}
+                    data={orderForm.value?.items ?? []}
+                    varian={customVariant}
+                  />
                 </Suspense>
               )}
             </AsyncInfoContainer>

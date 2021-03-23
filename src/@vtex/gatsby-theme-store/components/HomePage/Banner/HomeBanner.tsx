@@ -5,7 +5,7 @@ const Banne: FC = () => (
   <Flex
     sx={{
       overflow: 'hidden',
-      height: ['auto', 'auto', '250px', '300px'],
+      height: ['auto', 'auto', '350px', '500px'],
       width: '100%',
     }}
   >

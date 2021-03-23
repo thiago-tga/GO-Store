@@ -198,6 +198,8 @@ const theme: SxStyleProp = {
          fontWeight: 400,
          letterSpacing: '0.2em',
          textTransform: 'uppercase',
+        
+
       },
 
       // paginationDots: shelfPaginationDots,

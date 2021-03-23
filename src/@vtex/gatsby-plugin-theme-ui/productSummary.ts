@@ -21,6 +21,7 @@ const productSummary: SxStyleProp = {
    width:'100%',
    padding: ['15px', '20px', '30px'],
    position: 'relative',
+   
   },
 }
 
