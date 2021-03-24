@@ -7,6 +7,7 @@ const Banne: FC = () => (
       overflow: 'hidden',
       height: ['auto', 'auto', '350px', '500px'],
       width: '100%',
+      bg: '#F7F9FA',
     }}
   >
     <Banner

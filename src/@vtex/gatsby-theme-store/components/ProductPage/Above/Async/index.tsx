@@ -43,7 +43,6 @@ const Async: FC<Props> = ({ slug, data, varian: v }) => {
   const { commercialOffer } = useBestSeller(sku)
   const { formatMessage } = useIntl()
   const { productReference } = product
-  const varian = `${v}.content`
 
   if (product === null || sku === null) {
     return null

@@ -1,3 +1,4 @@
+import '@fontsource/rubik'
 import { baseTheme, createTheme } from '@vtex/store-ui'
 type Custom = {
   sizes: {
@@ -16,6 +17,7 @@ const customBase = {
   initialColorModeName: false,
   initialColorMode: false,
   useLocalStorage: false,
+  fontFamily: 'Rubik',
   colors: {
     text: '#3f3f40',
     textMuted: '#979899',
@@ -25,6 +27,7 @@ const customBase = {
     secondary: '#f71963',
     muted: '#f0f0f0',
     gray: '#e3e4e6',
+    fontFamily: 'Rubik',
  
   },
   sizes: {
@@ -35,7 +38,9 @@ const customBase = {
   layout: {
     container: {
       bg: '#F7F9FA',
+      fontFamily: 'Rubik',
     },
+
   },
 }
 

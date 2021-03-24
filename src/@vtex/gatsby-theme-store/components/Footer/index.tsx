@@ -12,8 +12,8 @@ const StoreFooter: FC = () => {
     <Fragment>
       <Container variant={`${variant}.FooterBox`}>
         <NavFooter variant={`${variant}.NavFooter`} />
-        <SocialMedias variant={`${variant}.SocialMedias`} />
       </Container>
+      <SocialMedias variant={`${variant}.SocialMedias`} />
     </Fragment>
     ///heheheh
   )

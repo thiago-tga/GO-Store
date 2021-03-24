@@ -21,6 +21,7 @@ import searchSuggestionsTheme from './searchSuggestions'
 import sliderTheme from './slider'
 import headerTheme from './header/header'
 import infoCardTheme from './inforCard'
+import shelfNew from './shelfNew'
 import footerTheme from './footer'
 
 export default createTheme(
@@ -31,6 +32,7 @@ export default createTheme(
   infoCardTheme,
   headerTheme,
   footerTheme,
+  shelfNew,
   productQuantityTheme,
   minicartTheme,
   searchControlsTheme,

@@ -1,5 +1,6 @@
-import { Box, LocalizedLink } from '@vtex/store-ui'
-import React, { FC } from 'react'
+import { LocalizedLink } from '@vtex/store-ui'
+import type { FC } from 'react'
+import React from 'react'
 
 const Logo: FC = () => (
   <LocalizedLink to="/" activeClassName="active">
