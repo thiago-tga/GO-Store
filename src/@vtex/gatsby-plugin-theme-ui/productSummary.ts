@@ -2,10 +2,7 @@ import { SxStyleProp } from '@vtex/store-ui'
 
 const productSummary: SxStyleProp = {
   container: {  
-    textDecoration: 'none',
-  //  color: 'text',
-   // flexGrow: 1,
-   // justifySelf: 'center',
+    bg: 'red'
   
   },
 

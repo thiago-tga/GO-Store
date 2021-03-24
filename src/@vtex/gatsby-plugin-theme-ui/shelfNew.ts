@@ -1,5 +1,16 @@
 export default {
   shelfNew: {
+    containerSize:{
+      flexDirection: 'column',
+        width: ['100%', '90%', '85%'],
+        margin: 'auto',
+        padding: 0,
+        paddingTop: '3rem',
+        [`@media (max-width: 766px)`]: {
+          alignItems: 'center',
+        },
+
+    },
     containerResumo:{
       flexDirection: 'column',
       pl: ['15px', '20px', '30px'],

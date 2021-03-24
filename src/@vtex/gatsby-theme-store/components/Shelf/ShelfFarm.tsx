@@ -1,4 +1,4 @@
-import { Box, Flex, ShelfTitle, useResponsiveSlider } from '@vtex/store-ui'
+import { Flex, ShelfTitle, useResponsiveSlider } from '@vtex/store-ui'
 import React from 'react'
 import type { FC } from 'react'
 
@@ -13,6 +13,7 @@ export interface Props {
   pageSizes?: number[]
   title?: JSX.Element | string
   variant?: string
+  v?: string
 }
 
 const PAGE_SIZES = [6]
@@ -21,6 +22,7 @@ const Shelf: FC<Props> = ({
   products,
   title,
   variant = 'default',
+  v = 'shelfNew',
   pageSizes = PAGE_SIZES,
 }) => {
   const { items } = useResponsiveSlider<Product>({
@@ -30,21 +32,7 @@ const Shelf: FC<Props> = ({
   })
 
   return (
-    <Flex
-      variant={variant}
-      sx={{
-        flexDirection: 'column',
-        width: ['100%', '90%', '85%'],
-        margin: 'auto',
-        padding: 0,
-        paddingTop: '3rem',
-      }}
-      css={() => ({
-        [`@media (max-width: 766px)`]: {
-          alignItems: 'center',
-        },
-      })}
-    >
+    <Flex variant={`${v}.containerSize`}>
       {title && <ShelfTitle variant={variant}>{title}</ShelfTitle>}
       <Traco />
       <ShelfPage

@@ -1,6 +1,5 @@
 import Shelf from './ShelfFarm'
 import React, { ComponentPropsWithoutRef, FC } from 'react'
-import { Flex, ShelfTitle, useResponsiveSlider } from '@vtex/store-ui'
 type Props = ComponentPropsWithoutRef<typeof Shelf>
 
 const pageSizes = [6]
