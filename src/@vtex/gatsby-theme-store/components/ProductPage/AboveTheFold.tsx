@@ -15,6 +15,7 @@ import { useOrderForm } from '@vtex/gatsby-theme-store/src/sdk/orderForm/useOrde
 import AsyncInfoContainer from './Above/Async/Container'
 import AsyncInfoPreview from './Above/Async/Preview'
 import AsyncInfo from './Above/Async'
+import Description from './Description.tsx/Description'
 
 const variant = 'default'
 
@@ -55,32 +56,37 @@ const AboveTheFold: FC<Props> = ({
   const customVariant = `${variant}.drawer`
 
   return (
-    <Flex variant="productPage.container">
-      <Container>
-        <Breadcrumb breadcrumb={breadcrumb} type="PRODUCT" />
-        <Grid my={4} mx="auto" gap={[0, 3]} columns={[1, '60% 40%']}>
-          <ProductImageGallery allItems={galleryItems} />
+    <>
+      <Flex variant="productPage.container">
+        <Container>
+          <Breadcrumb breadcrumb={breadcrumb} type="PRODUCT" />
+          <Grid my={4} mx="auto" gap={[0, 3]} columns={[1, '60% 40%']}>
+            <ProductImageGallery allItems={galleryItems} />
 
-          <Card>
-            <ProductDetailsTitle variant={variant}>
-              {productName}
-            </ProductDetailsTitle>
+            <Card>
+              <ProductDetailsTitle variant={variant}>
+                {productName}
+              </ProductDetailsTitle>
 
-            <AsyncInfoContainer>
-              {isServer ? null : (
-                <Suspense fallback={<AsyncInfoPreview />}>
-                  <AsyncInfo
-                    slug={slug}
-                    data={orderForm.value?.items ?? []}
-                    varian={customVariant}
-                  />
-                </Suspense>
-              )}
-            </AsyncInfoContainer>
-          </Card>
-        </Grid>
+              <AsyncInfoContainer>
+                {isServer ? null : (
+                  <Suspense fallback={<AsyncInfoPreview />}>
+                    <AsyncInfo
+                      slug={slug}
+                      data={orderForm.value?.items ?? []}
+                      varian={customVariant}
+                    />
+                  </Suspense>
+                )}
+              </AsyncInfoContainer>
+            </Card>
+          </Grid>
+        </Container>
+      </Flex>
+      <Container sx={{ pb: '35px' }}>
+        <Description />
       </Container>
-    </Flex>
+    </>
   )
 }
 

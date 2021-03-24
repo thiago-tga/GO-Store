@@ -23,7 +23,7 @@ import headerTheme from './header/header'
 import infoCardTheme from './inforCard'
 import shelfNew from './shelfNew'
 import footerTheme from './footer'
-
+import descriptionTheme from './description'
 export default createTheme(
   searchBannerTheme,
   base,
@@ -32,6 +32,7 @@ export default createTheme(
   infoCardTheme,
   headerTheme,
   footerTheme,
+  descriptionTheme,
   shelfNew,
   productQuantityTheme,
   minicartTheme,
