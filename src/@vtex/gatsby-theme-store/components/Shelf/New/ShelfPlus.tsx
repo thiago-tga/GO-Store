@@ -18,7 +18,7 @@ interface Props {
 
 const CardExplore: FC<Props> = ({ href, src, title, offer, OfferDiscount }) => (
   <Flex
-    sx={{ width: '66.3%', bg: '#ffffff' }}
+    sx={{ width: '66.3%', bg: '#ffffff', position: 'relative' }}
     css={() => ({
       [`@media (max-width: 766px)`]: {
         width: '100%',

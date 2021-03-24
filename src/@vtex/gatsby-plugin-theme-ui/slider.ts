@@ -189,7 +189,7 @@ const theme: SxStyleProp = {
   shelf: {
     default: {
       container: {
-      
+      bg: 'red',
       },
 
       title: {

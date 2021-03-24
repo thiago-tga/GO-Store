@@ -21,6 +21,7 @@ const CardExplore: FC<Props> = ({ href, src, title, offer, OfferDiscount }) => (
       width: '33%',
       minHeight: '276px',
       bg: '#ffffff',
+      position: 'relative',
     }}
     css={() => ({
       [`@media (min-width: 767px)`]: {
