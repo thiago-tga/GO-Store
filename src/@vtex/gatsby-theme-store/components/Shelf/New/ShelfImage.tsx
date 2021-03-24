@@ -13,17 +13,14 @@ interface Props {
   variant?: string
 }
 
-const InfoCardImage: FC<Props> = ({ alt, src, href }) => {
+const InfoCardImage: FC<Props> = ({ alt, src, href, variant = 'shelfNew' }) => {
   const linkProps = {
     as: LocalizedLink,
     to: href,
   }
 
   return (
-    <Flex
-      {...linkProps}
-      sx={{ objectPosition: 'center', objectFit: 'cover', overflow: 'hidden' }}
-    >
+    <Flex variant={`${variant}.containerImage`} {...linkProps} sx={{}}>
       <Image
         height={''}
         width={'100%'}

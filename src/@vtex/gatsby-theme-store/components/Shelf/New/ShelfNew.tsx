@@ -5,35 +5,24 @@ import Resumo from './resumo'
 import React, { FC } from 'react'
 
 interface Props {
-  variant?: string
   href: string
   src: string
   title: string
   offer: string
   OfferDiscount: string
   alt: string
+  variant?: string
 }
 
-const CardExplore: FC<Props> = ({ href, src, title, offer, OfferDiscount }) => (
-  <Flex
-    sx={{
-      flexDirection: 'column',
-      width: '33%',
-      minHeight: '276px',
-      bg: '#ffffff',
-      position: 'relative',
-    }}
-    css={() => ({
-      [`@media (min-width: 767px)`]: {
-        width: '32.9%',
-      },
-
-      [`@media (max-width: 766px)`]: {
-        width: '49.3%',
-        alignItems: 'stretch',
-      },
-    })}
-  >
+const CardExplore: FC<Props> = ({
+  href,
+  src,
+  title,
+  offer,
+  OfferDiscount,
+  variant = 'shelfNew',
+}) => (
+  <Flex variant={`${variant}.container`}>
     <Flex
       sx={{
         padding: ['15px', '20px', '30px'],
