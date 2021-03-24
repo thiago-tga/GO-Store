@@ -8,7 +8,6 @@ const ContainerExplore: FC = () => (
       margin: 'auto',
       justifyContent: ['center', 'center', 'space-between'],
       gap: 2,
-      paddingTop: '3rem',
       paddingBottom: '3rem',
     }}
     css={() => ({

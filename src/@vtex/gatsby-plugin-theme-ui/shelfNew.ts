@@ -5,6 +5,7 @@ export default {
         width: ['100%', '90%', '85%'],
         margin: 'auto',
         padding: 0,
+        pb: '4rem',
         paddingTop: '3rem',
         [`@media (max-width: 766px)`]: {
           alignItems: 'center',
