@@ -1,4 +1,4 @@
-import { Banner, Box, Container, Flex } from '@vtex/store-ui'
+import { Banner, Flex } from '@vtex/store-ui'
 import React, { FC } from 'react'
 
 const Banne: FC = () => (

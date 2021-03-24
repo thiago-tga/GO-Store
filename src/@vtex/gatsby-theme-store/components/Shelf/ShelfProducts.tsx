@@ -7,5 +7,4 @@ const pageSizes = [6]
 const ShelfProducts: FC<Props> = (props) => (
   <Shelf {...props} pageSizes={pageSizes} title={'FARM'} />
 )
-
 export default ShelfProducts

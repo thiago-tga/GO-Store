@@ -18,12 +18,12 @@ const ContainerExplore: FC = () => (
   >
     <CardExplore
       href="/vintage-phone/p"
-      src="https://s3-alpha-sig.figma.com/img/0060/d7d3/b8a6abdcc82a2fca183a8417c6df5347?Expires=1616371200&Signature=BBztaIGH7Q8lO9W3LcLWV~DwSggjByyPTCvHCGtF3m6GcK-M01swrvUyUcUuJMhh-nOskHeTm7H3DU8CCQHjSkPfTX6JZw0SyZ7xV8v~Kn3ZNR~HYu97ZWKauzWMIvdQXv5A6GbhXw0t7yRcHpCn9bp26iy1hhhqEuqjnGvue4~G2FQf~M3cjdnj-TpRGyCYzTZtYS0hUAx8nn99DsUaRsd0jeum5ErT6CwHP3dzQS-NhdkS-MUVk3PKAEdRSD5fNqD7hu046jI~ot8gjFmGMeVpGFz2OWfWu-3CLlxibzHKoh5QfGRW6-jcJaB7~xmmRsoGjQ-nGP3A7x2Hnkb27A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+      src="https://s3-alpha-sig.figma.com/img/0060/d7d3/b8a6abdcc82a2fca183a8417c6df5347?Expires=1617580800&Signature=C5UG9Tt2nLpLv8Njld7P8hxs0Ydyecsl29PYwH2mJYpgP2cn1xnsD7bCtUr0zxr-RkMwB12Ic2FbNQ~hSqg9ireVcMrKyYqvmLLkVNssI0UmxoNaKpy-JmYLH2WQDCOewGqWPuEdyI2QhLQUifvqBGro7h1IwwH4cqGJaP8Y4v4FnG6wv299DajVBKU8Y2-AAJGSbAmQSdgLFRISAaJ2jvXH8Ks9rMXBw~DJGEaf25~Qi5aVUBl7nQwfEQ7lCt9WooXdcmQPd~if2V~6nHxAov152tXNuDgLoOibI-WM4vpV6H4aPCrw1hXeNYEL1SEO~YFbeFMGyvVVSTf9i4wPIw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
       title="Tshirt"
     />
     <CardExplore
       href="/vintage-phone/p"
-      src="https://s3-alpha-sig.figma.com/img/73ba/6fb5/38c736539225aefbe05cb0691e73a6cd?Expires=1616371200&Signature=e~fIf3ClLDyg4~5nFEn7aSQ1~kwhLA8b~JK07aBE~oUD4Io2OQzqHNSWFf3HVgNgkjfZz4XoeieRjJZDogoObm~qXfrzmleuUlEwrHF24KznTJTBvxijhr-92TJELkkWKzS0TWP2vseyi8tK-nlh-1KYkd3f4k11J1poG9~SXxqRydBIMeYnLRPiUn-JRV9mnRUdjXSR5U-Y1me2U3GEd1DiKg6XkyZPO53ZNXNVVwGUG3DtsbHm~AWr6pES~VvQx8VjksGyNS6~8QuF4MIKTM71Y1kmaRzX0Qwlq2dkB70zj0oZt4IIMe8JFaUSskxlulYvUG195NwQegrzHg-IAA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+      src="https://s3-alpha-sig.figma.com/img/73ba/6fb5/38c736539225aefbe05cb0691e73a6cd?Expires=1617580800&Signature=BZAluAkvLc2M4KGPoaRG54BcFcXXDK-aRw3oDtfjatK7IlMaZFJcFYlTrgzFEgG35ETLTAJyjDScNaQWDeOBX6quzl~DHoJkP7EWMrmB3~LYAhKAqLQc7RvzMWEEDnUIWhw5HxiC3PldVS0p8T4GpdDoFexEqofIGN9~jweBhFoMWu0zedqz1duK1BFplNH4WXcmlSN-qCtnkSzHQLmCl9cXeMPynON0m79zcCDVbojBJZarOWKz~B5xxxbq6BKI0W1w7kurd3uQpaPactYwjiRNuJELk~m8X8DjCE~buAv3fzDdLSQa8RAxCRYb~CDCZBhA1L1m7ReKWwjkDDEfTg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
       title="Óculos e Acessórios"
     />
   </Flex>

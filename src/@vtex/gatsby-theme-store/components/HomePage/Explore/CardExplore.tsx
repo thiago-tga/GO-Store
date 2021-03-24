@@ -5,8 +5,6 @@ import {
   InfoCardInfo,
   InfoCardInfoAction,
 } from '@vtex/store-ui'
-/** @jsx jsx */
-import { jsx } from 'theme-ui'
 
 import React, { FC } from 'react'
 const Block: FC = ({ children }) => (
