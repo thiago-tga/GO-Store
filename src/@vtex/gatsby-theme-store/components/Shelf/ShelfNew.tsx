@@ -11,7 +11,6 @@ export interface Props {
 const Shelf1: FC<Props> = ({ title, variant = 'default' }) => {
   return (
     <Flex
-      variant={`shelf.${variant}.page.container`}
       sx={{
         flexDirection: 'column',
         width: ['100%', '90%', '85%'],

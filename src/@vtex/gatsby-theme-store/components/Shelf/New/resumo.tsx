@@ -18,7 +18,15 @@ const CardExplore: FC<Props> = ({
     <Flex variant={`${variant}.containerResumo`} sx={{}}>
       <Box variant={`${variant}.off`}>30% OFF</Box>
       <Box sx={{ pb: '0.5rem' }}>{title}</Box>
-      <Box sx={{ fontSize: '0.8rem', color: '#979899' }}>{OfferDiscount}</Box>
+      <Box
+        sx={{
+          fontSize: '0.8rem',
+          color: '#979899',
+          textDecoration: 'line-through',
+        }}
+      >
+        {OfferDiscount}
+      </Box>
       <Box sx={{ fontSize: '1.3rem' }}>{offer}</Box>
     </Flex>
   )
