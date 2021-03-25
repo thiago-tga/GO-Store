@@ -35,6 +35,7 @@ export default {
       [`@media (max-width: 832px)`]: {
         flexWrap: 'wrap-reverse',
         gap: 4,
+        mb: '3rem',
       },
     },
 

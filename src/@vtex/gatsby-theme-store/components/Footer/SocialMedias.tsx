@@ -8,7 +8,7 @@ const SocialMedias: FC<{ variant?: string }> = ({ variant }) => (
     sx={{
       width: '90%',
       m: 'auto',
-      [`@media (max-width: 539px)`]: {
+      [`@media (max-width: 689px)`]: {
         flexWrap: 'wrap',
         justifyContent: 'center',
         gap: 3,
@@ -20,7 +20,7 @@ const SocialMedias: FC<{ variant?: string }> = ({ variant }) => (
       sx={{
         width: '60%',
         minWidth: '475px',
-        [`@media (max-width: 539px)`]: {
+        [`@media (max-width: 689px)`]: {
           width: '100%',
           minWidth: '100%',
           textAlign: 'center',
@@ -32,7 +32,7 @@ const SocialMedias: FC<{ variant?: string }> = ({ variant }) => (
           color: '#3F3F40',
           fontSize: '12px',
           textAlign: 'left',
-          [`@media (max-width: 539px)`]: {
+          [`@media (max-width: 689px)`]: {
             textAlign: 'center',
           },
         }}
@@ -51,7 +51,7 @@ const SocialMedias: FC<{ variant?: string }> = ({ variant }) => (
         [`@media (max-width: 862px)`]: {
           justifyContent: 'flex-end',
         },
-        [`@media (max-width: 539px)`]: {
+        [`@media (max-width: 689px)`]: {
           justifyContent: 'center',
         },
       }}
@@ -63,7 +63,7 @@ const SocialMedias: FC<{ variant?: string }> = ({ variant }) => (
             position: 'absolute',
             top: '83%',
           },
-          [`@media (max-width: 539px)`]: {
+          [`@media (max-width: 689px)`]: {
             top: '78%',
           },
         }}
