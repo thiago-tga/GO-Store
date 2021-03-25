@@ -15,6 +15,7 @@ export default {
         color: '#062e2e',
         height: '25px',
         marginBottom: '0px',
+        textDecoration: 'none',
       },
 
       discountBadge: {
