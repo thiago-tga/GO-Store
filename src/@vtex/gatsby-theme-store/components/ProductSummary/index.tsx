@@ -1,5 +1,6 @@
-import React, { FC } from 'react'
-import { Props } from '@vtex/gatsby-theme-store/src/components/ProductSummary'
+import type { FC } from 'react'
+import React from 'react'
+import type { Props } from '@vtex/gatsby-theme-store/src/components/ProductSummary'
 import { useLink } from '@vtex/gatsby-theme-store/src/sdk/product/useLink'
 import { useSummaryImage } from '@vtex/gatsby-theme-store/src/sdk/product/useSummaryImage'
 import {
@@ -63,46 +64,28 @@ const ProductSummary: FC<Props> = ({
   const imgProps = useSummaryImage(imageUrl)
 
   return (
-    <Box
-      sx={{
-        bg: '#FFFFFF',
-        minWidth: '160px',
-        width: '33%',
-        position: 'relative',
-      }}
-      css={() => ({
-        [`@media (min-width: 767px)`]: {
-          width: '32.9%',
-        },
+    <ProductSummaryContainer {...linkProps} variant={variant}>
+      <ProductSummaryImage
+        alt={imageText ?? 'Product Image'}
+        loading={loading}
+        variant={variant}
+        {...imgProps}
+      />
+      <Box sx={{ paddingLeft: '10%' }}>
+        <ProductSummaryTitle variant={variant}>
+          {productName}
+        </ProductSummaryTitle>
 
-        [`@media (max-width: 766px)`]: {
-          width: '49.3%',
-        },
-      })}
-    >
-      <ProductSummaryContainer {...linkProps} variant={variant}>
-        <ProductSummaryImage
-          alt={imageText ?? 'Product Image'}
-          loading={loading}
-          variant={variant}
-          {...imgProps}
-        />
-        <Box sx={{ paddingLeft: '10%' }}>
-          <ProductSummaryTitle variant={variant}>
-            {productName}
-          </ProductSummaryTitle>
-
-          {sellers === undefined ? (
-            <OfferPreview />
-          ) : sellers.length > 0 ? (
-            <Offer
-              variant="productSummary"
-              commercialOffer={sellers[0].commercialOffer}
-            />
-          ) : null}
-        </Box>
-      </ProductSummaryContainer>
-    </Box>
+        {sellers === undefined ? (
+          <OfferPreview />
+        ) : sellers.length > 0 ? (
+          <Offer
+            variant="productSummary"
+            commercialOffer={sellers[0].commercialOffer}
+          />
+        ) : null}
+      </Box>
+    </ProductSummaryContainer>
   )
 }
 

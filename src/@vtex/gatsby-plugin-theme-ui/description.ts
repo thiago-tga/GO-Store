@@ -7,28 +7,28 @@ const descriptionTheme: SxStyleProp = {
       height: '100%',
       justifyContent: 'space-between',
       gap: 1,
-      flexWrap:'wrap',
+      flexWrap: 'wrap',
     },
     containerDescr: {
       width: '65%',
       '@media screen and (max-width: 1024px)': {
         width: '64%',
-         '@media screen and (max-width: 768px)': {
-           width: '100%',
-         },
-         '@media screen and (max-width: 320px)': {
+        '@media screen and (max-width: 768px)': {
           width: '100%',
-        }
+        },
+        '@media screen and (max-width: 320px)': {
+          width: '100%',
+        },
       },
-     
-      height:'390px',
-      padding:'48px',
-      alignItems:'center',
+
+      height: '390px',
+      padding: '48px',
+      alignItems: 'center',
       mt: 20,
-      background:'#FFFFFF',
+      background: '#FFFFFF',
       // minWidth: '540px',
     },
-    
+
     textoDescricao: {
       fontFamily: 'Rubik',
       fontWeight: 400,
@@ -40,28 +40,27 @@ const descriptionTheme: SxStyleProp = {
       color: '#3F3F4',
       lineHeight: '24px',
       textAlign: 'justify',
-      mb: '20px'
-      
-      
+      mb: '20px',
     },
     contentCaract: {
-      width:'34%',
+      width: '34%',
       '@media screen and (max-width: 1024px)': {
         width: '34%',
-         '@media screen and (max-width: 768px)': {
-           width: '100%',
-         },
-         '@media screen and (max-width: 320px)': {
+        '@media screen and (max-width: 768px)': {
           width: '100%',
-        }
+        },
+        '@media screen and (max-width: 320px)': {
+          width: '100%',
+        },
       },
-      height:'390px',
-      padding:'48px',
-      alignItems:'center',
+      height: '390px',
+      padding: '48px',
+      alignItems: 'center',
       mt: 20,
-      background:'#FFFFFF',    
+      background: '#FFFFFF',
     },
     textoCaracteristica: {
+      width: '100%',
       fontFamily: 'Rubik',
       fontWeight: 400,
       fontStyle: 'normal',
@@ -72,7 +71,7 @@ const descriptionTheme: SxStyleProp = {
       color: '#3F3F4',
       lineHeight: '24px',
       textAlign: 'justify',
-      background:'#FFFFFF',
+      background: '#FFFFFF',
     },
   },
 }

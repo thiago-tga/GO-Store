@@ -1,6 +1,7 @@
-import React, { FC, lazy } from 'react'
-import { Breadcrumb, BreadcrumbItem } from '@vtex/store-ui'
-import PageList from '@vtex/gatsby-theme-store/src/components/Search/List'
+import type { FC } from 'react'
+import React, { lazy } from 'react'
+import type { BreadcrumbItem } from '@vtex/store-ui'
+import { Breadcrumb, Box } from '@vtex/store-ui'
 import Container from '@vtex/gatsby-theme-store/src/components/Container'
 import SuspenseDevice from '@vtex/gatsby-theme-store/src/components/Suspense/Device'
 import Controls from '@vtex/gatsby-theme-store/src/components/Search/Controls'
@@ -15,13 +16,12 @@ import type {
 } from '@vtex/gatsby-theme-store/src/templates/__generated__/SearchPageQuery.graphql'
 import type { PageProps } from 'gatsby'
 
+import PageList from './List/index'
 import { Banner } from './Banner'
 
 const DesktopSearchFilters = lazy(
   () => import('@vtex/gatsby-theme-store/src/components/Search/Filters/Desktop')
 )
-
-const COLUMNS = [2, 3, 5]
 
 type Props = PageProps<
   SearchPageQueryQuery,
@@ -51,7 +51,7 @@ const AboveTheFold: FC<Props> = ({ data, pageContext }) => {
 
         <SearchTemplateMain>
           <Controls data={data} />
-          <PageList initialData={data} columns={COLUMNS} />
+          <PageList initialData={data} />
         </SearchTemplateMain>
       </SearchTemplateContainer>
     </Container>

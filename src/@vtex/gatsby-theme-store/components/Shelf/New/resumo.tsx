@@ -1,5 +1,6 @@
 import { Flex, Box } from '@vtex/store-ui'
-import React, { FC } from 'react'
+import type { FC } from 'react'
+import React from 'react'
 
 interface Props {
   title: string
@@ -27,8 +28,9 @@ const CardExplore: FC<Props> = ({
       >
         {OfferDiscount}
       </Box>
-      <Box sx={{ fontSize: '1.3rem' }}>{offer}</Box>
+      <Box sx={{ fontSize: '20px' }}>{offer}</Box>
     </Flex>
   )
 }
+
 export default CardExplore

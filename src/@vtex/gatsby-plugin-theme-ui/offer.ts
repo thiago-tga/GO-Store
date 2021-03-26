@@ -3,38 +3,45 @@ export default {
     productSummary: {
       listPrice: {
         textDecoration: 'line-through',
-        fontSize: '16px',
+        fontSize: '14px',
         color: '#727273',
-        minHeight: '25px',
-      
+        // minHeight: '25px',
+        lineHeight: '20px',
       },
 
+      // preço da pagina principal
       price: {
-        fontSize: '1.2rem',
-        fontWeight: 600,
-        color: '#062e2e',
-        height: '25px',
+        textDecoration: 'none',
+        fontSize: '20px',
+        fontWeight: 'normal',
+        color: '#3F3F40',
+        // height: '25px',
         marginBottom: '0px',
+        //   textDecoration: 'none',
       },
 
+      // estilo do botao verde de desconto
       discountBadge: {
+        textDecoration: 'none',
         fontSize: '1rem',
-        fontWeight: 600,
+        fontWeight: 500,
         backgroundColor: '#71985A',
         color: 'white',
         position: 'absolute',
-        top: ['15px','20px', '30px'],
+        top: ['15px', '20px', '30px'],
         left: ['15px', '20px', '30px'],
         padding: ['0.1rem', '0.2rem', '0.3rem'],
       },
 
+      // container do productsummary/card
       container: {
         minHeight: '130px',
-      
       },
 
+      // calculo do desconto da pagina
       installments: {
-        fontSize: '16px',
+        textDecoration: 'none',
+        fontSize: '12px',
         fontWeight: 400,
         color: '#727273',
       },
@@ -42,7 +49,7 @@ export default {
 
     productDetails: {
       listPrice: {
-        textDecoration: 'line-through',
+        textDecoration: ' line-through',
         fontSize: '16px',
         color: '#979899',
         minHeight: '25px',
@@ -51,7 +58,6 @@ export default {
       discountBadge: {
         fontSize: '16px',
         color: '#417a00',
-      
       },
 
       price: {
@@ -62,8 +68,6 @@ export default {
         marginBottom: '12px',
         fontStyle: 'normal',
         lineHeight: '36px',
-        
-
       },
 
       installments: {

@@ -1,4 +1,5 @@
-import React, { FC } from 'react'
+import type { FC } from 'react'
+import React from 'react'
 import { useIntl } from '@vtex/gatsby-plugin-i18n'
 import { useNumberFormat } from '@vtex/gatsby-theme-store/src/sdk/localization/useNumberFormat'
 import { useListPrice } from '@vtex/gatsby-theme-store/src/sdk/offer/useListPrice'
@@ -10,7 +11,7 @@ import {
   OfferSoldOut,
   OfferListPrice,
   OfferContainer,
-  OfferInstallments,
+  // OfferInstallments,
   OfferDiscountBadge,
 } from '@vtex/store-ui'
 
@@ -32,12 +33,12 @@ interface Props {
 const Offer: FC<Props> = ({
   commercialOffer,
   commercialOffer: {
-    maxInstallments: [maxInstallments],
+    // maxInstallments: [maxInstallments],
   },
   variant,
 }) => {
   const { formatMessage } = useIntl()
-  const { format } = useNumberFormat()
+  // const { format } = useNumberFormat()
   const price = usePrice(commercialOffer)
   const listPrice = useListPrice(commercialOffer)
   const discountPrice = useDiscount(commercialOffer)
@@ -59,7 +60,7 @@ const Offer: FC<Props> = ({
             </OfferDiscountBadge>
           </Flex>
 
-          <OfferInstallments variant={variant}>
+          {/* <OfferInstallments variant={variant}>
             {maxInstallments
               ? formatMessage(
                   { id: 'offer.installments' },
@@ -69,7 +70,7 @@ const Offer: FC<Props> = ({
                   }
                 )
               : null}
-          </OfferInstallments>
+          </OfferInstallments> */}
         </>
       )}
     </OfferContainer>

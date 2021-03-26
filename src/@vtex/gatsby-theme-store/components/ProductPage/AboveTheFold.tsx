@@ -8,10 +8,13 @@ import {
   Grid,
   Breadcrumb,
   ProductDetailsTitle,
+  Box,
 } from '@vtex/store-ui'
-import React, { FC, Suspense } from 'react'
+import type { FC } from 'react'
+import React, { Suspense } from 'react'
 import { isServer } from '@vtex/gatsby-theme-store/src/utils/env'
 import { useOrderForm } from '@vtex/gatsby-theme-store/src/sdk/orderForm/useOrderForm'
+
 import AsyncInfoContainer from './Above/Async/Container'
 import AsyncInfoPreview from './Above/Async/Preview'
 import AsyncInfo from './Above/Async'
@@ -60,9 +63,13 @@ const AboveTheFold: FC<Props> = ({
       <Flex variant="productPage.container">
         <Container>
           <Breadcrumb breadcrumb={breadcrumb} type="PRODUCT" />
-          <Grid my={4} mx="auto" gap={[0, 3]} columns={[1, '60% 40%']}>
-            <ProductImageGallery allItems={galleryItems} />
 
+          <Grid
+            mx="auto"
+            columns={[1, '60% 38%']}
+            sx={{ width: ['100%', '90%', '85%'], bg: '#FFFFFF', pt: '2rem' }}
+          >
+            <ProductImageGallery allItems={galleryItems} />
             <Card>
               <ProductDetailsTitle variant={variant}>
                 {productName}
@@ -84,7 +91,9 @@ const AboveTheFold: FC<Props> = ({
         </Container>
       </Flex>
       <Container sx={{ pb: '35px' }}>
-        <Description />
+        <Box sx={{ width: ['100%', '90%', '85%'], margin: 'auto' }}>
+          <Description />
+        </Box>
       </Container>
     </>
   )

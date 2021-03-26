@@ -1,8 +1,9 @@
 import { Flex, Box } from '@vtex/store-ui'
+import type { FC } from 'react'
+import React from 'react'
+
 import ShelfImage from './ShelfImage'
 import Resumo from './resumo'
-
-import React, { FC } from 'react'
 
 interface Props {
   href: string
@@ -28,9 +29,9 @@ const CardExplore: FC<Props> = ({
         padding: ['15px', '20px', '30px'],
       }}
     >
-      <ShelfImage src={src} href={href} alt={''} />
+      <ShelfImage src={src} href={href} alt="" />
     </Flex>
-    <Box sx={{ fontSize: '1rem' }}>
+    <Box sx={{ fontSize: '14px' }}>
       <Resumo title={title} offer={offer} OfferDiscount={OfferDiscount} />
     </Box>
   </Flex>

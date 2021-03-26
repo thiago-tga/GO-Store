@@ -1,4 +1,4 @@
-import { SxStyleProp } from '@vtex/store-ui'
+import type { SxStyleProp } from '@vtex/store-ui'
 
 export const custom: SxStyleProp = {
   'rich-text': {
@@ -28,6 +28,8 @@ export const custom: SxStyleProp = {
   },
   buttons: {
     loadMore: {
+      fontSize: '10px',
+      fontWeight: 500,
       width: '100%',
       cursor: 'pointer',
       '&:disabled': {
@@ -54,8 +56,6 @@ export const custom: SxStyleProp = {
   },
   productPage: {
     container: {
-      my: 4,
-      mx: 0,
       flexDirection: 'column',
     },
   },

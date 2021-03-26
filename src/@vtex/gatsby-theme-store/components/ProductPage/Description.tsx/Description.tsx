@@ -1,11 +1,12 @@
 import React from 'react'
-import { Flex, Heading, Text, Box } from '@vtex/store-ui'
+import { Flex, Heading, Text, Divider } from '@vtex/store-ui'
 
 function Description() {
   const variant = 'description'
+
   return (
     <Flex variant={`${variant}.contentContainer`}>
-      <Flex variant={`${variant}.containerDescr`} yarn>
+      <Flex variant={`${variant}.containerDescr`}>
         <Text variant={`${variant}.textoDescricao`}>
           <Heading sx={{ marginBottom: '30px' }} as="h3">
             {' '}
@@ -42,18 +43,7 @@ function Description() {
             </Heading>
           </Flex>
           Farm
-          <Box
-            sx={{
-              width: '200px',
-              '@media screen and (max-width: 320px)': {
-                width: '260px',
-              },
-              height: '2px',
-              mb: '20px',
-              border: '1px solid #E3E4E6',
-              background: '#3F3F40',
-            }}
-          />
+          <Divider />
           <Flex>
             <Heading
               as="h5"
@@ -63,18 +53,7 @@ function Description() {
             </Heading>
           </Flex>
           Algodão
-          <Box
-            sx={{
-              width: '200px',
-              '@media screen and (max-width: 320px)': {
-                width: '260px',
-              },
-              height: '2px',
-              mb: '20px',
-              border: '1px solid #E3E4E6',
-              background: '#3F3F40',
-            }}
-          />
+          <Divider />
           <Flex>
             <Heading
               as="h5"
@@ -84,18 +63,7 @@ function Description() {
             </Heading>
           </Flex>
           Feminino
-          <Box
-            sx={{
-              width: '200px',
-              '@media screen and (max-width: 320px)': {
-                width: '260px',
-              },
-              height: '2px',
-              mb: '20px',
-              border: '1px solid #E3E4E6',
-              background: '#3F3F40',
-            }}
-          />
+          <Divider />
           <Flex>
             <Heading
               as="h5"
