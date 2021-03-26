@@ -3,36 +3,45 @@ export default {
     productSummary: {
       listPrice: {
         textDecoration: 'line-through',
-        fontSize: '16px',
-        color: '#727273',
-        minHeight: '25px',
-      },
-
-      price: {
-        fontSize: '20px',
-        fontWeight: 600,
-        color: '#062e2e',
-        height: '25px',
-        marginBottom: '0px',
-      },
-
-      discountBadge: {
         fontSize: '14px',
-        fontWeight: 600,
-        borderRadius: '1000px',
-        px: '4px',
-        backgroundColor: '#417a00',
+        color: '#727273',
+        // minHeight: '25px',
+        lineHeight: '20px',
+      },
+
+// preço da pagina principal 
+      price: {
+        textDecoration: 'none',
+        fontSize: '20px',
+        fontWeight: 'normal',
+        color: '#3F3F40',
+        // height: '25px',
+        marginBottom: '0px',
+     //   textDecoration: 'none',
+      },
+
+// estilo do botao verde de desconto 
+      discountBadge: {
+        textDecoration: 'none',
+        fontSize: '1rem',
+        fontWeight: 500,
+        backgroundColor: '#71985A',
         color: 'white',
-        marginLeft: '8px',
-        py: 'auto',
+        position: 'absolute',
+        top: ['15px','20px', '30px'],
+        left: ['15px', '20px', '30px'],
+        padding: ['0.1rem', '0.2rem', '0.3rem'],
       },
 
+//container do productsummary/card 
       container: {
-        minHeight: '130px',
+        minHeight: '130px'
       },
 
+// calculo do desconto da pagina 
       installments: {
-        fontSize: '16px',
+        textDecoration: 'none',
+        fontSize: '12px',
         fontWeight: 400,
         color: '#727273',
       },
@@ -40,29 +49,35 @@ export default {
 
     productDetails: {
       listPrice: {
-        textDecoration: 'line-through',
+        textDecoration: ' line-through',
         fontSize: '16px',
-        color: '#727273',
+        color: '#979899',
         minHeight: '25px',
       },
 
       discountBadge: {
         fontSize: '16px',
         color: '#417a00',
+      
       },
 
       price: {
         fontSize: '36px',
-        fontWeight: 700,
-        color: '#3f3f06',
-        height: '41px',
+        fontWeight: 'normal',
+        color: '3F3F40',
+        height: '36px',
         marginBottom: '12px',
+        fontStyle: 'normal',
+        lineHeight: '36px',
+        
+
       },
 
       installments: {
         fontSize: '16px',
         fontWeight: 400,
         color: '#727273',
+        fontFamily: 'Rubik, sans-serif',
       },
     },
   },

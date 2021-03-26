@@ -11,13 +11,17 @@ interface Props {
 }
 
 const styles: SxStyleProp = {
-  px: '24px',
-  width: '100%',
+  width: ['100%', '70%', '60%'],
+  minWidth: '180px',
+  fontSize: '14px',
   fontWeight: 500,
-  minHeight: '40px',
+  minHeight: '30px',
   textTransform: 'uppercase',
-  backgroundColor: 'primary',
-
+  backgroundColor: 'white',
+  color: '#70BB44',
+  borderColor: '#70BB44',
+  borderWidth: '2px',
+  borderStyle: 'solid',
   '&:hover': {
     opacity: '0.95',
   },
@@ -38,9 +42,9 @@ const BuyButton: FC<Props> = ({ sku }) => {
   return (
     <Button sx={styles} {...props}>
       {loading ? (
-        <Spinner size="20px" />
+        <Spinner size="10px" />
       ) : (
-        formatMessage({ id: 'buy-button.add-to-cart' })
+        formatMessage({ id: 'Adicionar ao carrinho' })
       )}
     </Button>
   )

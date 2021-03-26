@@ -28,6 +28,8 @@ export const custom: SxStyleProp = {
   },
   buttons: {
     loadMore: {
+      fontSize: '10px',
+      fontWeight: 500,
       width: '100%',
       cursor: 'pointer',
       '&:disabled': {
@@ -53,9 +55,7 @@ export const custom: SxStyleProp = {
     mb: 4,
   },
   productPage: {
-    container: {
-      my: 4,
-      mx: 0,
+    container: { 
       flexDirection: 'column',
     },
   },

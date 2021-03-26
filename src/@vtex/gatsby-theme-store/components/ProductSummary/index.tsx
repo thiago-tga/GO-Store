@@ -8,9 +8,9 @@ import {
   ProductSummaryContainer,
   ProductSummaryImage,
   ProductSummaryTitle,
+  Box,
 } from '@vtex/store-ui'
 
-import BuyButton from '../BuyButton'
 import Offer from './Offer'
 
 const OfferPreview: FC = () => (
@@ -70,18 +70,20 @@ const ProductSummary: FC<Props> = ({
         variant={variant}
         {...imgProps}
       />
-      <ProductSummaryTitle variant={variant}>{productName}</ProductSummaryTitle>
+      <Box sx={{ paddingLeft: '10%' }}>
+        <ProductSummaryTitle variant={variant}>
+          {productName}
+        </ProductSummaryTitle>
 
-      {sellers === undefined ? (
-        <OfferPreview />
-      ) : sellers.length > 0 ? (
-        <Offer
-          variant="productSummary"
-          commercialOffer={sellers[0].commercialOffer}
-        />
-      ) : null}
-
-      <BuyButton sku={sku} />
+        {sellers === undefined ? (
+          <OfferPreview />
+        ) : sellers.length > 0 ? (
+          <Offer
+            variant="productSummary"
+            commercialOffer={sellers[0].commercialOffer}
+          />
+        ) : null}
+      </Box>
     </ProductSummaryContainer>
   )
 }

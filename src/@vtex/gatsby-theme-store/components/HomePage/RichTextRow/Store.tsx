@@ -3,9 +3,9 @@ import React, { FC } from 'react'
 
 const Img: FC = () => (
   <img
-    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEOSURBVHgB1ZVLDoIwEIanjQkJbPAGdQUsOZl6ArmBeCKPwJLHxt5AVrADOwYIYHkIJcZvw3Qof+fvgxJoEcfxQzwYrINblnWoG7T3ksF6WLuxk/UQFRBYgJiBsp+jsDFNpUEQmLquP0EBWZbtXddNMW4cGIZxAUW0td4OkiQ5lmXpizAtisJ1HIfDAsIwZJTSQISm0Dvbtu0TWRJWEEXRiRByrYsV2vReid/WiiOogVqoidq4Bgxf5HnugSI0TfOqkBHZ3lUJOuCwHbyJ0IkKN32dzU/yDkYqqeOl/ybkdw5kjNwXnTtg1gAD08IGug/lv3MgG3xq522+Bv8/wMcaLD3NQ9+1HXCYB59od3IvDG5xJ6hblXIAAAAASUVORK5CYII%3D"
-    width="24px"
-    height="24px"
+    src="https://s3-alpha-sig.figma.com/img/8df9/2920/feb153aa9228d996b207bb3057cd6426?Expires=1617580800&Signature=LRTHD-mAps2wRoxfP0Xi1PUHNsf4kOJlFxLqZZeUdWNpo7kjmn70bQIW18ukWudLeG3LoNRR1OZaJxkMIpcYS3WgA4fZAeCllxPa9tI6v05jZjIE0oY44HAfTcpwsqbWMHyOAJlUcaX7dYHMe~3Ui7B45bvAwqgQ70xgTQDvYFW4zCAw4o8~nbgq1h81seb3HO1jb8DS~y4G2raReDtRbUAKKjRF3yr5t3Y-pwfQIGZlUKBCloYX8GgfUYqxBgKWqYzinei2wlHA7J2FjvnIN4j5Uz56h2HPxAf2UiLipC~YSkJmiilnfnijhnDlneILzzLnD4ZqtKu47Yfyj56PvQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+    width="140px"
+    height="100px"
     alt="store"
   />
 )

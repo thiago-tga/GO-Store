@@ -8,13 +8,15 @@ import {
   Grid,
   Breadcrumb,
   ProductDetailsTitle,
+  Box,
 } from '@vtex/store-ui'
 import React, { FC, Suspense } from 'react'
 import { isServer } from '@vtex/gatsby-theme-store/src/utils/env'
-
+import { useOrderForm } from '@vtex/gatsby-theme-store/src/sdk/orderForm/useOrderForm'
 import AsyncInfoContainer from './Above/Async/Container'
 import AsyncInfoPreview from './Above/Async/Preview'
 import AsyncInfo from './Above/Async'
+import Description from './Description.tsx/Description'
 
 const variant = 'default'
 
@@ -51,29 +53,47 @@ const AboveTheFold: FC<Props> = ({
   const videoItems = useDetailsVideos(videos, productName)
   const galleryItems = [...imageItems, ...videoItems]
 
+  const orderForm = useOrderForm()
+  const customVariant = `${variant}.drawer`
+
   return (
-    <Flex variant="productPage.container">
-      <Container>
-        <Breadcrumb breadcrumb={breadcrumb} type="PRODUCT" />
-        <Grid my={4} mx="auto" gap={[0, 3]} columns={[1, '60% 40%']}>
-          <ProductImageGallery allItems={galleryItems} />
+    <>
+      <Flex variant="productPage.container">
+        <Container>
+          <Breadcrumb breadcrumb={breadcrumb} type="PRODUCT" />
 
-          <Card>
-            <ProductDetailsTitle variant={variant}>
-              {productName}
-            </ProductDetailsTitle>
+          <Grid
+            mx="auto"
+            columns={[1, '60% 38%']}
+            sx={{ width: ['100%', '90%', '85%'], bg: '#FFFFFF', pt: '2rem' }}
+          >
+            <ProductImageGallery allItems={galleryItems} />
+            <Card>
+              <ProductDetailsTitle variant={variant}>
+                {productName}
+              </ProductDetailsTitle>
 
-            <AsyncInfoContainer>
-              {isServer ? null : (
-                <Suspense fallback={<AsyncInfoPreview />}>
-                  <AsyncInfo slug={slug} />
-                </Suspense>
-              )}
-            </AsyncInfoContainer>
-          </Card>
-        </Grid>
+              <AsyncInfoContainer>
+                {isServer ? null : (
+                  <Suspense fallback={<AsyncInfoPreview />}>
+                    <AsyncInfo
+                      slug={slug}
+                      data={orderForm.value?.items ?? []}
+                      varian={customVariant}
+                    />
+                  </Suspense>
+                )}
+              </AsyncInfoContainer>
+            </Card>
+          </Grid>
+        </Container>
+      </Flex>
+      <Container sx={{ pb: '35px' }}>
+        <Box sx={{ width: ['100%', '90%', '85%'], margin: 'auto' }}>
+          <Description />
+        </Box>
       </Container>
-    </Flex>
+    </>
   )
 }
 

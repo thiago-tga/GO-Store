@@ -9,12 +9,17 @@ const productDetails: SxStyleProp = {
 
   title: {
     color: '#3f3f40',
-    fontSize: '30px',
-    fontWeight: 700,
+    fontSize: '24px',
+    fontFamily: 'Rubik, sans-serif',
+    fontStyle: 'normal',
+    fontWeight: 'normal',
+    lineHeight: '32px',
+  
   },
 
   container: {
-    px: [0, 5, 6],
+    // px: [0, 5, 6],
+ 
   },
 }
 

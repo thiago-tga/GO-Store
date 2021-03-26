@@ -3,18 +3,59 @@ import { createTheme, searchBarTheme, SxStyleProp } from '@vtex/store-ui'
 const theme: SxStyleProp = createTheme(searchBarTheme, {
   searchbar: {
     textInput: {
-      maxHeight: '40px',
+      width: '100%',
+
+      input: {
+        pl: 3,
+        pr: 48,
+        border: 'none',
+        width: '90%',
+        minHeight: '40px',
+        fontSize: 'inherit',
+        background: '#F2F4F5'
+      },
+
+      button: {
+        width: '100%',
+        padding: 0,
+        border: 'none',
+        backgroundColor: 'transparent',
+      },
     },
 
     container: {
-      marginTop: '0px',
-      width: '250px',
-      height: '45px',
-      borderWidth: '1px',
+      maxWidth: 540,
+      width: '540px',
+      marginTop: '8px',
+      minHeight: '48px',
+      bg: '#F2F4F5',
+      borderWidth: '2px',
+      borderStyle: 'solid',
+      borderColor: '#F2F4F5',
+      alignItems: 'center',
+      position: 'relative',
+      fontStyle: 'normal',
+      fontSize: '1rem',
+      color: '#979899',
+     
     },
 
     button: {
-      maxHeight: '40px',
+      backgroundColor: 'transparent',
+      color: '#CACBCC',
+      px: 3,
+      position: 'absolute',
+      right: 0,
+      height: 40,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      cursor: 'pointer',
+
+      '&:disabled': {
+        color: '#F2F4F5',
+        
+      },
     },
   },
 })

@@ -83,6 +83,17 @@ module.exports = {
         allowedHosts,
       },
     },
+
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          id: process.env.TYPEKIT_ID,
+        },
+      },
+    },
+
+    
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -95,6 +106,7 @@ module.exports = {
         display: 'minimal-ui',
       },
     },
+
     {
       resolve: '@vtex/gatsby-plugin-cms',
       options: {
@@ -102,6 +114,8 @@ module.exports = {
         workspace,
       },
     },
+
+
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {

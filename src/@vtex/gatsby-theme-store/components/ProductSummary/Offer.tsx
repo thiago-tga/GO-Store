@@ -10,7 +10,7 @@ import {
   OfferSoldOut,
   OfferListPrice,
   OfferContainer,
-  OfferInstallments,
+  // OfferInstallments,
   OfferDiscountBadge,
 } from '@vtex/store-ui'
 
@@ -32,12 +32,12 @@ interface Props {
 const Offer: FC<Props> = ({
   commercialOffer,
   commercialOffer: {
-    maxInstallments: [maxInstallments],
+    // maxInstallments: [maxInstallments],
   },
   variant,
 }) => {
   const { formatMessage } = useIntl()
-  const { format } = useNumberFormat()
+  // const { format } = useNumberFormat()
   const price = usePrice(commercialOffer)
   const listPrice = useListPrice(commercialOffer)
   const discountPrice = useDiscount(commercialOffer)
@@ -52,14 +52,14 @@ const Offer: FC<Props> = ({
         <>
           <OfferListPrice variant={variant}>{listPrice}</OfferListPrice>
 
-          <Flex sx={{ alignItems: 'center', minHeight: '30px' }}>
+          <Flex sx={{ alignItems: 'center', minHeight: '30px'}}>
             <OfferPrice variant={variant}>{price}</OfferPrice>
             <OfferDiscountBadge variant={variant}>
-              {discountPrice !== 0 ? <>-{discountPrice}%</> : discountPrice}
+              {discountPrice !== 0 ? <>-{discountPrice}% OFF</> : discountPrice}
             </OfferDiscountBadge>
           </Flex>
 
-          <OfferInstallments variant={variant}>
+          {/* <OfferInstallments variant={variant}>
             {maxInstallments
               ? formatMessage(
                   { id: 'offer.installments' },
@@ -69,7 +69,7 @@ const Offer: FC<Props> = ({
                   }
                 )
               : null}
-          </OfferInstallments>
+          </OfferInstallments> */}
         </>
       )}
     </OfferContainer>

@@ -14,6 +14,8 @@ const btn = {
 
 const custom: SxStyleProp = {
   minicart: {
+    borderRadius: '30px',
+  },
     drawer: {
       footer: {
         button: {
@@ -22,18 +24,19 @@ const custom: SxStyleProp = {
             backgroundColor: '#072c75',
           },
         },
-      },
+      
       content: {
         quantity: {
           width: 100,
-          border: '2px solid #e3e4e6',
-
+          border: '2px solid red',
+            bg: 'red',
           wrapper: {
             marginTop: 3,
             alignItems: 'center',
 
             spinner: {
               marginLeft: 2,
+              
             },
           },
         },

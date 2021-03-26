@@ -1,36 +1,54 @@
-import { useIntl } from '@vtex/gatsby-plugin-i18n'
 import Minicart from '@vtex/gatsby-theme-store/src/components/Minicart'
 import SearchBar from '@vtex/gatsby-theme-store/src/components/SearchBar'
-import { Flex, Header } from '@vtex/store-ui'
+import { Divider, Flex, Header } from '@vtex/store-ui'
 import type { FC } from 'react'
 import React, { Fragment } from 'react'
 
 import Login from '../../../../components/Login'
-import Logo from './Logo'
 import Menu from './Menu'
-import NotificationBar from './NotificationBar'
-import OverMenu from './OverMenu'
+import Logo from './Logo'
 
 const StoreHeader: FC = () => {
   const variant = 'header'
-  const { formatMessage } = useIntl()
-
   return (
     <Fragment>
-      <NotificationBar
-        text={formatMessage({ id: 'notification-bar.sale' })}
-        variant={`${variant}.notificationbar`}
-      />
-      <OverMenu variant={`${variant}.overmenu`} />
       <Header variant={variant}>
-        <Flex variant={`${variant}.left`}>
-          <Logo variant={`${variant}.logo`} />
-          <Menu variant={`${variant}.menu`} />
+        <Flex variant={`${variant}.top`}>
+          <Flex variant={`${variant}.left`}>
+            <Logo />
+          </Flex>
+          <Flex
+            css={() => ({
+              [`@media (max-width: 930px)`]: {
+                width: '40%',
+              },
+              [`@media (max-width: 600px)`]: {
+                position: 'absolute',
+                top: '89px',
+                width: '240px',
+                zIndex: 1,
+                left: '4%',
+              },
+            })}
+          >
+            <SearchBar placeholder="Buscar por produtos" aria-label="Search" />
+          </Flex>
+          <Flex variant={`${variant}.right`}>
+            <Login />
+            <Minicart />
+          </Flex>
         </Flex>
-        <Flex variant={`${variant}.right`}>
-          <SearchBar placeholder="Search" aria-label="Search" />
-          <Login />
-          <Minicart />
+        <Divider />
+        <Flex
+          variant={`${variant}.botoom`}
+          css={() => ({
+            [`@media (max-width: 600px)`]: {
+              position: 'relative',
+              height: '49px',
+            },
+          })}
+        >
+          <Menu variant={`${variant}.menu`} />
         </Flex>
       </Header>
     </Fragment>

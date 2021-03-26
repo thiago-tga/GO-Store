@@ -2,12 +2,14 @@ import React, { FC } from 'react'
 import { useAsyncProduct } from '@vtex/gatsby-theme-store/src/components/ProductPage/useAsyncProduct'
 import { useBestSeller } from '@vtex/gatsby-theme-store/src/sdk/product/useBestSeller'
 import { useSku } from '@vtex/gatsby-theme-store/src/sdk/product/useSku'
-import { Divider, ProductDetailsReference } from '@vtex/store-ui'
-import { useIntl } from '@vtex/gatsby-plugin-i18n'
-
+import { Flex, Button, Box } from '@vtex/store-ui'
+import type { OrderFormContext } from '@vtex/gatsby-theme-store/src/sdk/orderForm/Provider'
+import { NumericStepper } from './Quantity'
 import BuyButton from '../../../BuyButton'
 import Offer from './Offer'
-import Social from './Social'
+import Color from './Color'
+import Size from './Size'
+import SearchCEP from './SearchCEP'
 
 type Item = {
   itemId: string
@@ -22,6 +24,8 @@ type Item = {
 
 interface Props {
   slug?: string
+  data: NonNullable<OrderFormContext['value']>['items']
+  varian: string
 }
 
 type Product = {
@@ -31,30 +35,48 @@ type Product = {
   }
 }
 
-const variant = 'default'
-
-const Async: FC<Props> = ({ slug }) => {
+const Async: FC<Props> = ({ slug, data }) => {
   const { product } = (useAsyncProduct({ slug }) as unknown) as Product
   const [sku] = useSku<Item>(product)
   const { commercialOffer } = useBestSeller(sku)
-  const { formatMessage } = useIntl()
-  const { productReference } = product
 
   if (product === null || sku === null) {
     return null
   }
+  console.log(data)
 
   return (
     <>
-      <Offer variant="productDetails" commercialOffer={commercialOffer} />
+      <Box>
+        <Offer variant="productDetails" commercialOffer={commercialOffer} />
+        <Color />
+        <Size />
 
-      <Divider />
-
-      <ProductDetailsReference variant={variant}>
-        {formatMessage({ id: 'productDetails.reference' })}: {productReference}
-      </ProductDetailsReference>
-      <BuyButton sku={sku} />
-      <Social />
+        <Flex
+          sx={{
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: 2,
+            mt: '1rem',
+            alignItems: 'center',
+          }}
+        >
+          <Button
+            sx={{
+              width: ['100%', '70%', '37%'],
+              fontSize: '14px',
+              minWidth: '160px',
+            }}
+          >
+            COMPRAR AGORA
+          </Button>
+          <BuyButton sku={sku} />
+        </Flex>
+        <Flex>
+          <NumericStepper />
+        </Flex>
+        <SearchCEP />
+      </Box>
     </>
   )
 }
