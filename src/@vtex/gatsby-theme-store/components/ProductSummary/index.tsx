@@ -69,6 +69,7 @@ const ProductSummary: FC<Props> = ({
         minWidth: '160px',
         width: '33%',
         position: 'relative',
+        textDecoration:'none'
       }}
       css={() => ({
         [`@media (min-width: 767px)`]: {

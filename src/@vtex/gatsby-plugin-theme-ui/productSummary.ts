@@ -11,6 +11,7 @@ const productSummary: SxStyleProp = {
     fontSize: '14px',
     height: '20px',
     color: '#071923',
+    textDecoration:'none'
 
   },
 

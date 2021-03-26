@@ -1,4 +1,4 @@
-import '@fontsource/rubik'
+//import '@fontsource/rubik'
 
 export default {
   footer: {
