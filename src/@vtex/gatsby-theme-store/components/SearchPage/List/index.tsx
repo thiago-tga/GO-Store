@@ -4,11 +4,19 @@ import { useIntl } from '@vtex/gatsby-plugin-i18n'
 import { Button, Flex } from '@vtex/store-ui'
 import React, { Fragment } from 'react'
 import type { FC } from 'react'
+<<<<<<< HEAD
 import { useSearch } from '@vtex/gatsby-theme-store/src/sdk/search/useSearch'
 import OverlaySpinner from '@vtex/gatsby-theme-store/src/components/Search/List/OverlaySpinner'
 import Page from '@vtex/gatsby-theme-store/src/components/Search/List/Page'
 
 import { SearchQuery } from './__generated__/SearchQuery.graphql'
+=======
+
+import { useSearch } from '@vtex/gatsby-theme-store/src/sdk/search/useSearch'
+import { SearchQuery } from './__generated__/SearchQuery.graphql'
+import OverlaySpinner from '@vtex/gatsby-theme-store/src/components/Search/List/OverlaySpinner'
+import Page from '@vtex/gatsby-theme-store/src/components/Search/List/Page'
+>>>>>>> b9550ca513a5c720a8a660f2f756a80ff9ddd517
 import type { SearchQueryQuery } from './__generated__/SearchQuery.graphql'
 
 interface Props {

@@ -19,6 +19,7 @@ export default {
       color: '#3F3F40',
     },
 
+<<<<<<< HEAD
     off: {
       fontSize: '14px',
       fontWeight: 500,
@@ -28,6 +29,17 @@ export default {
       top: ['15px', '20px', '30px'],
       left: ['15px', '20px', '30px'],
       padding: ['0.1rem', '0.2rem', '0.3rem'],
+=======
+   off: {
+    fontSize: '14px',
+    fontWeight: 500,
+    backgroundColor: '#71985A',
+    color: 'white',
+    position: 'absolute',
+    top: ['15px','20px', '30px'],
+    left: ['15px', '20px', '30px'],
+    padding: ['0.1rem', '0.2rem', '0.3rem'],
+>>>>>>> b9550ca513a5c720a8a660f2f756a80ff9ddd517
     },
 
     containerImage: {
@@ -71,4 +83,19 @@ export default {
       height: ['28rem', '25rem', '30.5rem'],
     },
   },
+<<<<<<< HEAD
+=======
+
+  containerPlusImage:{
+    padding: ['15px', '20px', '30px'],
+    width: '65%',
+    objectPosition: 'center',
+    objectFit: 'cover',
+    overflow: 'hidden',
+    height: ['28rem', '25rem', '30.5rem'],
+  },
+
+ 
+
+>>>>>>> b9550ca513a5c720a8a660f2f756a80ff9ddd517
 }

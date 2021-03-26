@@ -35,7 +35,7 @@ const customBase = {
   layout: {
     container: {
       bg: '#F7F9FA',
-      fontFamily: 'Rubik',
+     fontFamily: 'Rubik',
     },
   },
 }

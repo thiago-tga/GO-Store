@@ -53,7 +53,7 @@ const Offer: FC<Props> = ({
         <>
           <OfferListPrice variant={variant}>{listPrice}</OfferListPrice>
 
-          <Flex sx={{ alignItems: 'center', minHeight: '30px' }}>
+          <Flex sx={{ alignItems: 'center', minHeight: '30px'}}>
             <OfferPrice variant={variant}>{price}</OfferPrice>
             <OfferDiscountBadge variant={variant}>
               {discountPrice !== 0 ? <>-{discountPrice}% OFF</> : discountPrice}
