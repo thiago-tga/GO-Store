@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://storetheme.vtex.com/">
-    <img alt="Gatsby" src="https://storecomponents.vtexassets.com/arquivos/store-theme-logo.png" width="250" />
+    <img src="./src/images/Logo.jpg" width="250" />
   </a>
 </p>
 <h1 align="center">
