@@ -1,11 +1,6 @@
 import { Box, Button, Flex, Heading, Input, Link } from '@vtex/store-ui'
-<<<<<<< HEAD
 import type { FC } from 'react'
 import React from 'react'
-=======
-import React from 'react'
-import { FC } from 'react'
->>>>>>> b9550ca513a5c720a8a660f2f756a80ff9ddd517
 
 const SearchCEP: FC<{ variant?: string }> = () => (
   <Box sx={{ paddingBottom: '2rem' }}>
@@ -33,11 +28,7 @@ const SearchCEP: FC<{ variant?: string }> = () => (
       <Input
         sx={{ width: '50%', borderColor: '#E3E4E6' }}
         placeholder="Código postal"
-<<<<<<< HEAD
       />
-=======
-      ></Input>
->>>>>>> b9550ca513a5c720a8a660f2f756a80ff9ddd517
       <Link
         sx={{
           width: '50%',

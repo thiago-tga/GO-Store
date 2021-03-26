@@ -11,10 +11,5 @@ const Img: FC = () => (
     sx={{ filter: 'grayscale(100%)' }}
   />
 )
-<<<<<<< HEAD
-
-// grayscale(100%);
-=======
 //grayscale(100%);
->>>>>>> b9550ca513a5c720a8a660f2f756a80ff9ddd517
 export default Img

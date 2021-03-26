@@ -1,19 +1,11 @@
 import { Flex } from '@vtex/store-ui'
-<<<<<<< HEAD
 import type { FC } from 'react'
 import React from 'react'
 
-=======
-import React, { FC } from 'react'
->>>>>>> b9550ca513a5c720a8a660f2f756a80ff9ddd517
 import CardExplore from '../New/ShelfNovidades'
 
 const ContainerExplore: FC = () => {
   const variant = 'shelfNew'
-<<<<<<< HEAD
-
-=======
->>>>>>> b9550ca513a5c720a8a660f2f756a80ff9ddd517
   return (
     <Flex
       sx={{

@@ -1,10 +1,6 @@
 import { Flex, ShelfTitle } from '@vtex/store-ui'
 import React from 'react'
 import type { FC } from 'react'
-<<<<<<< HEAD
-
-=======
->>>>>>> b9550ca513a5c720a8a660f2f756a80ff9ddd517
 import Traco from '../Traco'
 import Shelf from './ContainerRelated'
 
