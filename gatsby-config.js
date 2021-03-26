@@ -85,11 +85,7 @@ module.exports = {
     },
 
     {
-<<<<<<< HEAD
       resolve: 'gatsby-plugin-web-font-loader',
-=======
-      resolve: "gatsby-plugin-web-font-loader",
->>>>>>> b9550ca513a5c720a8a660f2f756a80ff9ddd517
       options: {
         typekit: {
           id: process.env.TYPEKIT_ID,
@@ -97,10 +93,6 @@ module.exports = {
       },
     },
 
-<<<<<<< HEAD
-=======
-    
->>>>>>> b9550ca513a5c720a8a660f2f756a80ff9ddd517
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -122,10 +114,6 @@ module.exports = {
       },
     },
 
-<<<<<<< HEAD
-=======
-
->>>>>>> b9550ca513a5c720a8a660f2f756a80ff9ddd517
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
