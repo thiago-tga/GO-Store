@@ -9,11 +9,7 @@ export default {
         lineHeight: '20px',
       },
 
-<<<<<<< HEAD
       // preço da pagina principal
-=======
-// preço da pagina principal 
->>>>>>> b9550ca513a5c720a8a660f2f756a80ff9ddd517
       price: {
         textDecoration: 'none',
         fontSize: '20px',
@@ -21,17 +17,10 @@ export default {
         color: '#3F3F40',
         // height: '25px',
         marginBottom: '0px',
-<<<<<<< HEAD
         //   textDecoration: 'none',
       },
 
       // estilo do botao verde de desconto
-=======
-     //   textDecoration: 'none',
-      },
-
-// estilo do botao verde de desconto 
->>>>>>> b9550ca513a5c720a8a660f2f756a80ff9ddd517
       discountBadge: {
         textDecoration: 'none',
         fontSize: '1rem',
@@ -44,21 +33,12 @@ export default {
         padding: ['0.1rem', '0.2rem', '0.3rem'],
       },
 
-<<<<<<< HEAD
       // container do productsummary/card
       container: {
         minHeight: '130px',
       },
 
       // calculo do desconto da pagina
-=======
-//container do productsummary/card 
-      container: {
-        minHeight: '130px'
-      },
-
-// calculo do desconto da pagina 
->>>>>>> b9550ca513a5c720a8a660f2f756a80ff9ddd517
       installments: {
         textDecoration: 'none',
         fontSize: '12px',

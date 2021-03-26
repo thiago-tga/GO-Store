@@ -55,11 +55,7 @@ export const custom: SxStyleProp = {
     mb: 4,
   },
   productPage: {
-<<<<<<< HEAD
     container: {
-=======
-    container: { 
->>>>>>> b9550ca513a5c720a8a660f2f756a80ff9ddd517
       flexDirection: 'column',
     },
   },
