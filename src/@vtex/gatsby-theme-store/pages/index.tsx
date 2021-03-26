@@ -1,6 +1,7 @@
 import type { PageProps } from 'gatsby'
 import { graphql } from 'gatsby'
 import Page from '@vtex/gatsby-theme-store/src/pages/index'
+import '@fontsource/rubik'
 
 import type { HomePageQueryQuery } from './__generated__/HomePageQuery.graphql'
 
