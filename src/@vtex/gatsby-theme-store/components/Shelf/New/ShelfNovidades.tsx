@@ -30,7 +30,7 @@ const CardExplore: FC<Props> = ({
     >
       <ShelfImage src={src} href={href} alt={''} />
     </Flex>
-    <Box sx={{ fontSize: '1rem' }}>
+    <Box sx={{ fontSize: '14px' }}>
       <Resumo title={title} offer={offer} OfferDiscount={OfferDiscount} />
     </Box>
   </Flex>

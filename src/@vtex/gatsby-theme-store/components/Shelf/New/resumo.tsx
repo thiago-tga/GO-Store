@@ -27,7 +27,7 @@ const CardExplore: FC<Props> = ({
       >
         {OfferDiscount}
       </Box>
-      <Box sx={{ fontSize: '1.3rem' }}>{offer}</Box>
+      <Box sx={{ fontSize: '20px' }}>{offer}</Box>
     </Flex>
   )
 }

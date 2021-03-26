@@ -2,7 +2,8 @@ import { SxStyleProp } from '@vtex/store-ui'
 
 const productSummary: SxStyleProp = {
   container: {  
-    bg: '#FFFFFF',
+       textDecoration: 'none',
+       bg: '#FFFFFF',
         minWidth: '160px',
         width: '33%',
         position: 'relative',

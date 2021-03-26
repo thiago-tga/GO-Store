@@ -2,8 +2,7 @@ import React, { FC } from 'react'
 import { useAsyncProduct } from '@vtex/gatsby-theme-store/src/components/ProductPage/useAsyncProduct'
 import { useBestSeller } from '@vtex/gatsby-theme-store/src/sdk/product/useBestSeller'
 import { useSku } from '@vtex/gatsby-theme-store/src/sdk/product/useSku'
-import { Flex, ProductDetailsReference, Button, Box } from '@vtex/store-ui'
-import { useIntl } from '@vtex/gatsby-plugin-i18n'
+import { Flex, Button, Box } from '@vtex/store-ui'
 import type { OrderFormContext } from '@vtex/gatsby-theme-store/src/sdk/orderForm/Provider'
 import { NumericStepper } from './Quantity'
 import BuyButton from '../../../BuyButton'
@@ -41,8 +40,6 @@ const Async: FC<Props> = ({ slug, data, varian: v }) => {
   const { product } = (useAsyncProduct({ slug }) as unknown) as Product
   const [sku] = useSku<Item>(product)
   const { commercialOffer } = useBestSeller(sku)
-  const { formatMessage } = useIntl()
-  const { productReference } = product
 
   if (product === null || sku === null) {
     return null
