@@ -9,6 +9,7 @@ import BuyButton from '../../../BuyButton'
 import Offer from './Offer'
 import Color from './Color'
 import Size from './Size'
+import SearchCEP from './SearchCEP'
 
 type Item = {
   itemId: string
@@ -34,9 +35,7 @@ type Product = {
   }
 }
 
-const variant = 'default'
-
-const Async: FC<Props> = ({ slug, data, varian: v }) => {
+const Async: FC<Props> = ({ slug, data }) => {
   const { product } = (useAsyncProduct({ slug }) as unknown) as Product
   const [sku] = useSku<Item>(product)
   const { commercialOffer } = useBestSeller(sku)
@@ -62,12 +61,21 @@ const Async: FC<Props> = ({ slug, data, varian: v }) => {
             alignItems: 'center',
           }}
         >
-          <Button sx={{ width: ['100%', '70%', '37%'] }}>COMPRAR AGORA</Button>
+          <Button
+            sx={{
+              width: ['100%', '70%', '37%'],
+              fontSize: '14px',
+              minWidth: '160px',
+            }}
+          >
+            COMPRAR AGORA
+          </Button>
           <BuyButton sku={sku} />
         </Flex>
         <Flex>
           <NumericStepper />
         </Flex>
+        <SearchCEP />
       </Box>
     </>
   )

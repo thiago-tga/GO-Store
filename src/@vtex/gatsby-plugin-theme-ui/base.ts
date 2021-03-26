@@ -1,5 +1,4 @@
 import { baseTheme, createTheme } from '@vtex/store-ui'
-import '@fontsource/rubik'
 type Custom = {
   sizes: {
     container: string

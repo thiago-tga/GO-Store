@@ -28,6 +28,8 @@ export const custom: SxStyleProp = {
   },
   buttons: {
     loadMore: {
+      fontSize: '10px',
+      fontWeight: 500,
       width: '100%',
       cursor: 'pointer',
       '&:disabled': {

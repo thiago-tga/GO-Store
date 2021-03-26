@@ -1,7 +1,6 @@
 export default {
   offer: {
     productSummary: {
-// decoração do texto de desconto 
       listPrice: {
         textDecoration: 'line-through',
         fontSize: '14px',

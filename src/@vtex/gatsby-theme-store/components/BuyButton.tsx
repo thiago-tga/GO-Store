@@ -11,7 +11,9 @@ interface Props {
 }
 
 const styles: SxStyleProp = {
-  width: ['100%', '70%', '55%'],
+  width: ['100%', '70%', '60%'],
+  minWidth: '180px',
+  fontSize: '14px',
   fontWeight: 500,
   minHeight: '30px',
   textTransform: 'uppercase',

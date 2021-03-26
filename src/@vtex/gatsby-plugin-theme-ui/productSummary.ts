@@ -16,25 +16,23 @@ const productSummary: SxStyleProp = {
         [`@media (max-width: 766px)`]: {
           width: '49.3%',
         },
-    
-  
-  },
+        },
 
-  title: {
-    fontFamily: 'Rubik',
-    fontStyle: 'normal',
-    fontWeight: 'normal',
-    fontSize: '14px',
-    color: '#3F3F40',
-    lineHeight: '20px',
-  },
+        title: {
+          fontFamily: 'Rubik',
+          fontStyle: 'normal',
+          fontWeight: 'normal',
+          fontSize: '14px',
+          color: '#3F3F40',
+          lineHeight: '20px',
+        },
 
-  image: {
-   width:'100%',
-   padding: ['15px', '20px', '30px'],
-  //  position: 'relative',
-   
-  },
-}
+        image: {
+          width:'100%',
+          padding: ['15px', '20px', '30px'],
+
+          
+        },
+        }
 
 export default { productSummary: { default: productSummary } }
