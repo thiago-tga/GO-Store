@@ -89,6 +89,6 @@ const ProductSummary: FC<Props> = ({
   )
 }
 
-export { fragment } from '@vtex/gatsby-theme-store/src/components/ProductSummary/index'
+// export { fragment } from '@vtex/gatsby-theme-store/src/components/ProductSummary/index'
 
 export default ProductSummary
