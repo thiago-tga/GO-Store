@@ -11,11 +11,9 @@ interface Props {
 }
 
 const styles: SxStyleProp = {
-  px: '24px',
-  minWidth: '270px',
-  width: ['100%', '70%', '17rem'],
+  width: ['100%', '70%', '55%'],
   fontWeight: 500,
-  minHeight: '40px',
+  minHeight: '30px',
   textTransform: 'uppercase',
   backgroundColor: 'white',
   color: '#70BB44',

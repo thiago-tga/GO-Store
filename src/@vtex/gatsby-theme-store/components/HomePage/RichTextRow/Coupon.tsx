@@ -6,7 +6,8 @@ const Img: FC = () => (
     width="154px"
     height="100px"
     alt="coupon"
+    sx={{ filter: 'grayscale(100%)' }}
   />
 )
-
+//grayscale(100%);
 export default Img

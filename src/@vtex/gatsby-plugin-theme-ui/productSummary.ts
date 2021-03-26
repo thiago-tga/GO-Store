@@ -2,7 +2,20 @@ import { SxStyleProp } from '@vtex/store-ui'
 
 const productSummary: SxStyleProp = {
   container: {  
-    bg: 'red'
+    bg: '#FFFFFF',
+        minWidth: '160px',
+        width: '33%',
+        position: 'relative',
+   
+    
+        [`@media (min-width: 767px)`]: {
+          width: '32.9%',
+        },
+
+        [`@media (max-width: 766px)`]: {
+          width: '49.3%',
+        },
+    
   
   },
 
@@ -17,7 +30,7 @@ const productSummary: SxStyleProp = {
   image: {
    width:'100%',
    padding: ['15px', '20px', '30px'],
-   position: 'relative',
+  //  position: 'relative',
    
   },
 }
