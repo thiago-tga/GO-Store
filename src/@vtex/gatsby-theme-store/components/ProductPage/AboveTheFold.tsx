@@ -18,6 +18,7 @@ import AsyncInfoPreview from './Above/Async/Preview'
 import AsyncInfo from './Above/Async'
 import Description from './Description.tsx/Description'
 
+
 const variant = 'default'
 
 type Props = {
@@ -32,15 +33,13 @@ type Props = {
           videos: Array<{ videoUrl: string }>
         }>
       }
-    }
+    },
   }
   slug: string
 }
 
 const AboveTheFold: FC<Props> = ({
-  data: {
-    vtex: { product },
-  },
+  data: {vtex: { product },},
   slug,
 }) => {
   const {
@@ -55,6 +54,7 @@ const AboveTheFold: FC<Props> = ({
 
   const orderForm = useOrderForm()
   const customVariant = `${variant}.drawer`
+ 
 
   return (
     <>
@@ -93,6 +93,7 @@ const AboveTheFold: FC<Props> = ({
           <Description />
         </Box>
       </Container>
+
     </>
   )
 }

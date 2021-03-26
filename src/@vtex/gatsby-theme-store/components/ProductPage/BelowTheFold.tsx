@@ -14,4 +14,4 @@ const BelowTheFold: FC<Props> = () => (
   </>
 )
 
-export default BelowTheFold
+export default  BelowTheFold

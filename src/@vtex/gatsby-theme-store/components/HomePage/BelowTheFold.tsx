@@ -7,7 +7,9 @@ import type { HomePageQueryQuery } from '../../pages/__generated__/HomePageQuery
 import RichTextRow from './RichTextRow'
 import ContainerExplore from './Explore/ContainerExplore'
 import ShelfProducts from '../Shelf/ShelfFarm'
+
 type Props = PageProps<HomePageQueryQuery>
+
 const pageSizes = [6]
 const BelowTheFold: FC<Props> = ({ data: { content, vtex } }, props) => (
   <>

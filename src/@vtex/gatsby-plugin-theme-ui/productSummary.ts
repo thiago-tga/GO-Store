@@ -20,11 +20,12 @@ const productSummary: SxStyleProp = {
   },
 
   title: {
-    fontWeight: 400,
+    fontFamily: 'Rubik',
+    fontStyle: 'normal',
+    fontWeight: 'normal',
     fontSize: '14px',
-    height: '20px',
-    color: '#071923',
-
+    color: '#3F3F40',
+    lineHeight: '20px',
   },
 
   image: {
