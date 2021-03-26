@@ -37,7 +37,7 @@ const transformHeaders = (headers, path) => {
 
 module.exports = {
   siteMetadata: {
-    title: 'Store Theme | VTEX Base Store',
+    title: 'Go Theme',
     description: 'A sample store using the best of Gatsby and VTEX',
     titleTemplate: '%s | Store Theme',
     author: 'Emerson Laurentino',
@@ -96,8 +96,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Store Theme - VTEX Base Store',
-        short_name: 'Store Theme',
+        name: 'Go-Store Theme',
+        short_name: 'Go-Store',
         start_url: '/',
         icon: 'src/images/icon.png',
         background_color: '#0a034e',
