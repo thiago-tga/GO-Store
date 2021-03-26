@@ -53,9 +53,7 @@ export const custom: SxStyleProp = {
     mb: 4,
   },
   productPage: {
-    container: {
-      my: 4,
-      mx: 0,
+    container: { 
       flexDirection: 'column',
     },
   },

@@ -8,6 +8,7 @@ import {
   Grid,
   Breadcrumb,
   ProductDetailsTitle,
+  Box,
 } from '@vtex/store-ui'
 import React, { FC, Suspense } from 'react'
 import { isServer } from '@vtex/gatsby-theme-store/src/utils/env'
@@ -60,9 +61,13 @@ const AboveTheFold: FC<Props> = ({
       <Flex variant="productPage.container">
         <Container>
           <Breadcrumb breadcrumb={breadcrumb} type="PRODUCT" />
-          <Grid my={4} mx="auto" gap={[0, 3]} columns={[1, '60% 40%']}>
-            <ProductImageGallery allItems={galleryItems} />
 
+          <Grid
+            mx="auto"
+            columns={[1, '50% 45%']}
+            sx={{ width: ['100%', '90%', '85%'], bg: '#FFFFFF', pt: '2rem' }}
+          >
+            <ProductImageGallery allItems={galleryItems} />
             <Card>
               <ProductDetailsTitle variant={variant}>
                 {productName}
@@ -84,7 +89,9 @@ const AboveTheFold: FC<Props> = ({
         </Container>
       </Flex>
       <Container sx={{ pb: '35px' }}>
-        <Description />
+        <Box sx={{ width: ['100%', '90%', '85%'], margin: 'auto' }}>
+          <Description />
+        </Box>
       </Container>
 
     </>

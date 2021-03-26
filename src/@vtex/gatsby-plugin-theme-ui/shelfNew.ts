@@ -70,6 +70,9 @@ export default {
     objectFit: 'cover',
     overflow: 'hidden',
     height: ['28rem', '25rem', '30.5rem'],
-  }
+  },
+
+ 
+
 }
 }

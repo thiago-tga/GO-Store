@@ -18,6 +18,7 @@ export default {
         color: '#3F3F40',
         // height: '25px',
         marginBottom: '0px',
+        textDecoration: 'none',
       },
 
 // estilo do botao verde de desconto 

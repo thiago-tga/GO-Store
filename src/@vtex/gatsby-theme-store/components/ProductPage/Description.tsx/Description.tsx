@@ -44,7 +44,7 @@ function Description() {
           Farm
           <Box
             sx={{
-              width: '200px',
+              width: '90%',
               '@media screen and (max-width: 320px)': {
                 width: '260px',
               },
@@ -65,7 +65,7 @@ function Description() {
           Algodão
           <Box
             sx={{
-              width: '200px',
+              width: '90%',
               '@media screen and (max-width: 320px)': {
                 width: '260px',
               },
@@ -86,7 +86,7 @@ function Description() {
           Feminino
           <Box
             sx={{
-              width: '200px',
+              width: '90%',
               '@media screen and (max-width: 320px)': {
                 width: '260px',
               },

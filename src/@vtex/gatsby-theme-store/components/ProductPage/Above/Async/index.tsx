@@ -51,24 +51,27 @@ const Async: FC<Props> = ({ slug, data, varian: v }) => {
 
   return (
     <>
-      <Offer variant="productDetails" commercialOffer={commercialOffer} />
-      <Color />
-      <Size />
-      <ProductDetailsReference variant={variant}>
-        {formatMessage({ id: 'productDetails.reference' })}: {productReference}
-      </ProductDetailsReference>
-      <Flex
-        sx={{
-          justifyContent: 'space-between',
-          flexWrap: 'wrap',
-        }}
-      >
-        <Button>COMPRAR AGORA</Button>
-        <BuyButton sku={sku} />
-      </Flex>
-      <Flex>
-        <NumericStepper />
-      </Flex>
+      <Box>
+        <Offer variant="productDetails" commercialOffer={commercialOffer} />
+        <Color />
+        <Size />
+
+        <Flex
+          sx={{
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: 2,
+            mt: '1rem',
+            alignItems: 'center',
+          }}
+        >
+          <Button sx={{ width: ['100%', '70%', '37%'] }}>COMPRAR AGORA</Button>
+          <BuyButton sku={sku} />
+        </Flex>
+        <Flex>
+          <NumericStepper />
+        </Flex>
+      </Box>
     </>
   )
 }

@@ -8,9 +8,10 @@ import type { ProductSummary_ProductFragment } from '@vtex/gatsby-theme-store/sr
 interface Props extends ComponentPropsWithoutRef<typeof Flex> {
   items: Array<ProductSummary_ProductFragment | undefined | null>
   variant: string
+  pageSizes?: number[]
 }
 
-const ShelfPage: FC<Props> = ({ items, variant, ...props }) => (
+const ShelfPage: FC<Props> = ({ items, pageSizes, variant, ...props }) => (
   <Flex {...props}>
     {items.map((item) => (
       <ProductSummary key={item!.productId!} product={item!} />
