@@ -2,14 +2,14 @@ import React, { FC } from 'react'
 import { useAsyncProduct } from '@vtex/gatsby-theme-store/src/components/ProductPage/useAsyncProduct'
 import { useBestSeller } from '@vtex/gatsby-theme-store/src/sdk/product/useBestSeller'
 import { useSku } from '@vtex/gatsby-theme-store/src/sdk/product/useSku'
-import { Flex, ProductDetailsReference, Button, Box } from '@vtex/store-ui'
-import { useIntl } from '@vtex/gatsby-plugin-i18n'
+import { Flex, Button, Box } from '@vtex/store-ui'
 import type { OrderFormContext } from '@vtex/gatsby-theme-store/src/sdk/orderForm/Provider'
 import { NumericStepper } from './Quantity'
 import BuyButton from '../../../BuyButton'
 import Offer from './Offer'
 import Color from './Color'
 import Size from './Size'
+import SearchCEP from './SearchCEP'
 
 type Item = {
   itemId: string
@@ -35,14 +35,10 @@ type Product = {
   }
 }
 
-const variant = 'default'
-
-const Async: FC<Props> = ({ slug, data, varian: v }) => {
+const Async: FC<Props> = ({ slug, data }) => {
   const { product } = (useAsyncProduct({ slug }) as unknown) as Product
   const [sku] = useSku<Item>(product)
   const { commercialOffer } = useBestSeller(sku)
-  const { formatMessage } = useIntl()
-  const { productReference } = product
 
   if (product === null || sku === null) {
     return null
@@ -65,12 +61,21 @@ const Async: FC<Props> = ({ slug, data, varian: v }) => {
             alignItems: 'center',
           }}
         >
-          <Button sx={{ width: ['100%', '70%', '37%'] }}>COMPRAR AGORA</Button>
+          <Button
+            sx={{
+              width: ['100%', '70%', '37%'],
+              fontSize: '14px',
+              minWidth: '160px',
+            }}
+          >
+            COMPRAR AGORA
+          </Button>
           <BuyButton sku={sku} />
         </Flex>
         <Flex>
           <NumericStepper />
         </Flex>
+        <SearchCEP />
       </Box>
     </>
   )

@@ -21,8 +21,8 @@ export default {
     },
 
    off: {
-    fontSize: '1rem',
-    fontWeight: 600,
+    fontSize: '14px',
+    fontWeight: 500,
     backgroundColor: '#71985A',
     color: 'white',
     position: 'absolute',

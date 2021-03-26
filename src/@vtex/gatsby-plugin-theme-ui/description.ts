@@ -62,6 +62,7 @@ const descriptionTheme: SxStyleProp = {
       background:'#FFFFFF',    
     },
     textoCaracteristica: {
+      width: '100%',
       fontFamily: 'Rubik',
       fontWeight: 400,
       fontStyle: 'normal',

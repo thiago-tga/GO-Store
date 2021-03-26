@@ -1,7 +1,6 @@
 export default {
   offer: {
     productSummary: {
-// decoração do texto de desconto 
       listPrice: {
         textDecoration: 'line-through',
         fontSize: '14px',
@@ -18,7 +17,7 @@ export default {
         color: '#3F3F40',
         // height: '25px',
         marginBottom: '0px',
-        textDecoration: 'none',
+     //   textDecoration: 'none',
       },
 
 // estilo do botao verde de desconto 
