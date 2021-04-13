@@ -1,10 +1,13 @@
 import { Flex } from '@vtex/store-ui'
-import React, { FC } from 'react'
+import type { FC } from 'react'
+import React from 'react'
+
 import CardExplore from './ShelfNovidades'
 import CardPlus from './ShelfPlus'
 
 const ContainerExplore: FC = () => {
   const variant = 'shelfNew'
+
   return (
     <Flex
       sx={{

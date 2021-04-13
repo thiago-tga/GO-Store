@@ -1,5 +1,7 @@
 import { Flex } from '@vtex/store-ui'
-import React, { FC } from 'react'
+import type { FC } from 'react'
+import React from 'react'
+
 import CardExplore from './CardExplore'
 
 const ContainerExplore: FC = () => (
@@ -18,14 +20,13 @@ const ContainerExplore: FC = () => (
   >
     <CardExplore
       href="/vintage-phone/p"
-      src='https://i.imgur.com/pNnw1jP.png'
+      src="https://i.imgur.com/pNnw1jP.png"
       title="Tshirt"
     />
     <CardExplore
       href="/vintage-phone/p"
       src="https://i.imgur.com/tWLkhEm.png"
       title="Óculos e Acessórios"
-      
     />
   </Flex>
 )

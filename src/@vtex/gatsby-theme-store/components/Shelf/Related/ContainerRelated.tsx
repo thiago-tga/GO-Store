@@ -6,6 +6,7 @@ import CardExplore from '../New/ShelfNovidades'
 
 const ContainerExplore: FC = () => {
   const variant = 'shelfNew'
+
   return (
     <Flex
       sx={{
@@ -53,7 +54,7 @@ const ContainerExplore: FC = () => {
           src="https://i.imgur.com/HDmw1Fr.png"
           title="Vestido cropped sonho do pantanal"
           OfferDiscount="R$87,90"
-          offer="28,90" 
+          offer="28,90"
           alt="w"
         />
       </Flex>

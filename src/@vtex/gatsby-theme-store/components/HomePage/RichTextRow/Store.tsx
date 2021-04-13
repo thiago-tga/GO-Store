@@ -1,5 +1,6 @@
 // https://storecomponents.vtexassets.com/arquivos/store.png
-import React, { FC } from 'react'
+import type { FC } from 'react'
+import React from 'react'
 
 const Img: FC = () => (
   <img

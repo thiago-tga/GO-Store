@@ -1,5 +1,6 @@
 import { Banner, Flex } from '@vtex/store-ui'
-import React, { FC } from 'react'
+import type { FC } from 'react'
+import React from 'react'
 
 const Banne: FC = () => (
   <Flex
